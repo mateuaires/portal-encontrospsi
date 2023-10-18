@@ -9,6 +9,5 @@ Além disso, estamos desenvolvendo de um sistema de triagem, que facilitará a m
 ![Projeto Integrador - Andersen, Felipe e Mateus](https://github.com/mateuaires/ProjetoFinal/assets/137817410/e58e9462-9ad2-41b8-9f12-2451414c3391)
 
 <br>
-## Tabela de Caso de Uso
-![Descrição](https://github.com/mateuaires/ProjetoFinal/assets/137817410/1a8d65a6-587d-4f27-863a-4d47db62295d)
 
+![Descrição](https://github.com/mateuaires/ProjetoFinal/assets/137817410/1a8d65a6-587d-4f27-863a-4d47db62295d)
