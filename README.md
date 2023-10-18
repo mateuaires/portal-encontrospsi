@@ -1,5 +1,5 @@
 # Projeto Clínica de Psicologia Encontros
-Nós, Anderson Facundo, Felipe Augusto e Mateus Aires, formamos a equipe responsável pelo projeto de desenvolvimento do site da Clínica Encontros Psicologia. Nosso objetivo é criar um espaço online acolhedor e informativo, que seja uma fonte de apoio psicológico para pacientes e um recurso valioso para profissionais da área.
+Nós, Anderson Facundo, Felipe Augusto e Mateus Aires, somos alunos do Instituto Federal de Brasília do curso Tecnólogo em Sistemas para Internet, formamos a equipe responsável pelo projeto de desenvolvimento do site da Clínica Encontros Psicologia. Nosso objetivo é criar um espaço online acolhedor e informativo, que seja uma fonte de apoio psicológico para pacientes e um recurso valioso para profissionais da área.
 
 Além disso, estamos desenvolvendo de um sistema de triagem, que facilitará a marcação de consultas no ambiente da clínica. Este sistema busca otimizar o processo de agendamento e garantir uma experiência mais eficaz e conveniente para todos os envolvidos. Dessa forma, estamos comprometidos em tornar a Clínica Encontros Psicologia um espaço virtual de referência.
 
@@ -12,7 +12,9 @@ Além disso, estamos desenvolvendo de um sistema de triagem, que facilitará a m
 
 <br>
 
-# Descrição do Caso de Uso
+# Tabela do Caso de Uso
+[Tabela aqui](https://docs.google.com/document/d/1VjHnzXunMZ1P3ColXXCZ8EX083d5y-71LdPKLM8u5XQ/edit?usp=sharing)
+
 <div align="center">
 <img src="https://github.com/mateuaires/ProjetoFinal/assets/137817410/1a8d65a6-587d-4f27-863a-4d47db62295d" width="500px"/>)
 </div>
