@@ -10,4 +10,4 @@ Além disso, estamos desenvolvendo de um sistema de triagem, que facilitará a m
 
 <br>
 
-<img src="https://github.com/mateuaires/ProjetoFinal/assets/137817410/1a8d65a6-587d-4f27-863a-4d47db62295d" width="700px"/>)
+<img src="https://github.com/mateuaires/ProjetoFinal/assets/137817410/1a8d65a6-587d-4f27-863a-4d47db62295d" width="200px"/>)
