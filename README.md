@@ -10,7 +10,7 @@ Além disso, estamos desenvolvendo de um sistema de triagem, que facilitará a m
 [Diagrama aqui](https://lucid.app/lucidchart/86063e43-abce-4347-8711-ff587eb168d4/edit?invitationId=inv_7785901f-4d76-475c-bbe6-4cd5a99ab6ea&page=0_0#)
 
 <div align="center">
-  <img src="https://github.com/mateuaires/ProjetoFinal/issues/4#issue-1991013328" width="700px"/>
+  <img src="https://user-images.githubusercontent.com/137817410/282524255-ef1b1d47-751c-450b-9c6e-9c19a9d911f1.png" width="700px"/>
 </div>
 
 <br>
