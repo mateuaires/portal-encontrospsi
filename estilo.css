@@ -8,7 +8,7 @@ html{
 
 
 body{
-	background-color: #F8F8F8;
+	background-color: #FAE8DA;
 	justify-content: right;
 }
 
@@ -20,7 +20,7 @@ nav{
 	line-height: 60px;
 }
 
-.container-imgs{
+.container-menu-icones{
 	display: flex;
 	margin-left: 10px;
 }
@@ -29,17 +29,15 @@ nav{
 	width: 60px;
 	height: 60px;
 	padding: 10px;
-	
 }
 
-.container-text{
+.container-menu-text{
 	font-family: 'Work Sans', cursive;
 	font-size: 1em;
 	text-align: right;
 	margin-right: 30px;
-	word-spacing: 6px;
+	word-spacing: 10px;
 }
-
 
 a{
 	font: 1.3em "Work Sans", sans-serif;
@@ -50,16 +48,15 @@ a{
 	color: #FFFFFF;
 }
 
-.a-menu: link, .a-menu: visited {
+.a-menu link, .a-menu visited {
 	color: #FFFFFF;
 }
-.a-menu: hover, .a-menu:active{
+.a-menu hover, .a-menu:active{
 	color: #CCCCCC;
 }
 
 header{
-	
-	background-color: #F8F8F8;
+	background-color: #FAE8DA;
 }
 
 #img-header{
@@ -69,7 +66,6 @@ header{
 
 
 h1{
-	color: ;
 	text-align: left;
 	font-family: "Meow Script", cursive;
 	font-size: 3em;
@@ -86,36 +82,27 @@ p{
 article{
 	width: 100%;
 	height: px;
-	display:grid;
-	grid-template-columns:2fr 2fr;
-	grid-auto-rows: 570px;
+	grid-auto-rows: 800px;
 	
 }
 
-#main-ppagina{
+.container-descricao{
+	display:grid;
+	grid-template-columns:2fr 2fr;
+}
+
+#descricao{
 	margin-left: 50px;
 	margin-top: 10px; 
 	padding: 50px;
-
-
 }
 
-.p-ppag{
-	color: #000000;
-	text-align: justify;
-	font: 1em "Work Sans", sans-serif;
-	line-height: 1.5em;
-	margin-left: 12px;
-}
-
-#div-img{
+#descricao-img{
 	margin-top: 70px;
 	margin-left: 150px;
-
 }
 
 #mask2{
-position: absolute;
 width: 416.55px;
 height: 398.31px;	
 }
@@ -124,11 +111,9 @@ height: 398.31px;
 .mask{
 	width: 0px;
 	height: 0px;
-	position: absolute; 
 }
 
 .img-ppagina{
-position: absolute;
 width: 440.51px;
 height: 319.97px;
 
@@ -202,15 +187,12 @@ main h1{
 	text-align: center;
 }
 
-.imagem{}
 
 .img-card{
 	width: 200px;
 	height: 250px;
 	border-radius: 20px;
 }
-
-.text-card{}
 
 .text-card h3{
 	font: 2em "Work Sans", sans-serif;
@@ -224,8 +206,6 @@ main h1{
 	color: #F8F8F8;
 	text-align: center;
 }
-
-section{}
 
 #pag-espaco{
 	padding: 20px;
@@ -299,7 +279,6 @@ section{}
 }
 
 .container-3 {
-  position:;
   padding: 30px;
   max-width: 1200px;
   margin: 0 auto;
@@ -323,7 +302,6 @@ section{}
 .item {
   width: 450px;
   height: 200px;
-  flex-shrink: ;
   transition: all 600ms ease-in-out;
   opacity: 0.5;
   border-radius: 20px;
@@ -363,18 +341,9 @@ section{}
 
 
  #img-spot{
- 	margin, border, padding: 0px;
  	width: 75px;
- 	height:75px;
- 	float: left;
+ 	height: 75px;
  }
-
- #texto-log-s{
- 	padding-left: 20px;
- }
-
-
-
 
 #h1-mod2{
 	position: relative;
@@ -411,10 +380,6 @@ Se ficar muito junto, aumenta*/
 	text-shadow: #CCCCCC 0.1em 0.1em 0.1em;
 }
 
-#texto-pod{
-	font-size: ;
-}
-
  #div-ouvir{
 	position:relative;
 	width: 125px;
@@ -439,8 +404,6 @@ Se ficar muito junto, aumenta*/
 
 
 #img-po{
-	border, padding: 0px;
-    grid-area: img;
     margin-left: 90px;
     margin-top: 90px;
     
@@ -502,4 +465,4 @@ footer{
 }
 
 /* MOBILE */
-@media screen and (max-width: 390px){
+/* @media screen and (max-width: 390px)
