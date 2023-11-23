@@ -13,11 +13,11 @@ body{
 }
 
 nav{
-	padding: 3px;
 	background-color: #D1675F;
 	display: flex;
 	justify-content: space-between;
-	line-height: 60px;
+	line-height: 50px;
+	text-align: center;
 }
 
 .container-menu-icones{
@@ -26,14 +26,14 @@ nav{
 }
 
 #img-icones{
-	width: 60px;
-	height: 60px;
+	width: 45px;
+	height: 45px;
 	padding: 10px;
 }
 
 .container-menu-text{
 	font-family: 'Work Sans', cursive;
-	font-size: 1em;
+	font-size: 0.7em;
 	text-align: right;
 	margin-right: 30px;
 	word-spacing: 10px;
@@ -66,83 +66,84 @@ header{
 
 
 h1{
-	text-align: left;
 	font-family: "Meow Script", cursive;
-	font-size: 3em;
+	font-size: 1.8em;
 	margin-bottom: 10px;
+}
+
+article h1{
+	color: #AE4E4E;
 }
 
 p{
 	color: #000000;
 	text-align: justify;
-	font: 1.3em "Work Sans", sans-serif;
+	font: 0.8em "Work Sans", sans-serif;
 	line-height: 1.5em;
 }
 
 article{
-	width: 100%;
-	height: px;
-	grid-auto-rows: 800px;
-	
+	padding: 50px;
+	margin-left: 170px;
+	margin-right: 170px;
 }
 
 .container-descricao{
-	display:grid;
-	grid-template-columns:2fr 2fr;
-}
-
-#descricao{
-	margin-left: 50px;
-	margin-top: 10px; 
-	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #descricao-img{
-	margin-top: 70px;
+	margin-top: 10px;
+	margin-bottom: 90px;
 	margin-left: 150px;
 }
 
 #mask2{
-width: 416.55px;
-height: 398.31px;	
+	width: 416.55px;
+	height: 398.31px;
 }
 
-
 .mask{
-	width: 0px;
-	height: 0px;
+	width: 0;
 }
 
 .img-ppagina{
-width: 440.51px;
-height: 319.97px;
-
-
-clip-path: url(#svg-mask1);
+	width: 440.51px;
+	height: 319.97px;
+	clip-path: url(#svg-mask1);
 }
 
 ul{
-
 	list-style: url(img/redcircle.png);
-	margin-left: 75px;
-	color: #AE4E4E;
 }
 
 li{
-	color: #000000;
 	font: 1em "Work Sans", sans-serif;
-	line-height: 2em;
+	line-height: 2.5em;
 }
 
-/*botão flutuante*/
-#bt-fixwp{
+#bt-agend{
 	position: fixed;
 	right: 30px;
 	bottom: 100px;
-	
+	cursor: pointer;
+	animation: pulse 1s infinite;
 }
 
-#img-wp{
+@keyframes pulse {
+	0% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.1);
+	}
+	100% {
+	  transform: scale(1);
+	}
+}
+#agend{
 	width: 64px;
 	height: 64px;
 }
@@ -159,8 +160,8 @@ li{
 }
 
 main{
-	background-color: #F8BB8F;
-	padding: 50px;
+	background-color: #fcc59e;
+	padding: 70px;
 }
 
 main h1{
@@ -170,16 +171,13 @@ main h1{
 .container{
 	display: flex;
 	justify-content: center;
-	margin-left: 20px;
-	margin-right: 20px;
-
 }
 
 .card{
-	width: 400px;
+	width: 200px;
 	background-color: #D1675F;
 	border-radius: 20px;
-	padding: 30px;
+	padding: 20px;
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
@@ -187,28 +185,27 @@ main h1{
 	text-align: center;
 }
 
-
 .img-card{
-	width: 200px;
-	height: 250px;
+	width: 150px;
+	height: 200px;
 	border-radius: 20px;
 }
 
 .text-card h3{
-	font: 2em "Work Sans", sans-serif;
+	font: 1.2em "Work Sans", sans-serif;
 	margin: 8px 8px;
 	color: #F8F8F8;
 	font-weight: 600;
 }
 
 .text-card p{
-	font: 1em "Work Sans", sans-serif;
+	font: 0.8em "Work Sans", sans-serif;
 	color: #F8F8F8;
 	text-align: center;
 }
 
 #pag-espaco{
-	padding: 20px;
+	padding: 60px;
 	display: grid;
 	grid-template-areas:
 		"container-1 container-1"
@@ -243,8 +240,8 @@ main h1{
 
 #img-esp{
 	background-color: #F5C5AE;
-	width: 300px;
-	height: 400px;
+	width: 150px;
+	height: 200px;
 	border-radius: 20px;
 	margin: 30px;
 	border: 10%;
@@ -253,11 +250,11 @@ main h1{
 }
 
 #texto{
-	max-width: 400px;
+	max-width: 300px;
 	text-align: center;
 	margin-top: 110px;
-	margin-left: 110px;
-	font-size: 1.5em;
+	margin-left: 40px;
+	font-size: 1.em;
 
 }
 
