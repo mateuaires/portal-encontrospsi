@@ -7,7 +7,7 @@
 		<meta name="author" content="Andersen Facundo, Felipe Augusto e Mateus Aires">
 		<meta name="keywords" content="psicologia, terapia, sao sebastiao, podcast de psicologia"/>
 		<meta name="description" content="Serviço de psicoterapia online para todo o Brasil e presencial em São Sebastião - DF. Nossos atendimentos prestados são destinados a pessoas de todas as faixas etárias">
-		<link rel="stylesheet" href="estilo.css" >
+		<link rel="stylesheet" href="estilo.css"/>
 		<link rel="shortcut icon" type="imagex/png" href="img/icone-aba.ico">
 	</head>
 
@@ -26,7 +26,7 @@
 				<a class="menu" href="#pag-espaco">ESPAÇO</a>
 				<a class="menu" href="#pag-depoimentos">DEPOIMENTOS</a>
 				<a class="menu" href="#pag-podcast">PODCAST</a>
-				<a class="menu" href=""><b>AGENDAMENTOS</b></a>
+				<a class="menu" href="https://forms.gle/dL8RAVzSMuArWhC46" target="_blank"><b>AGENDAMENTOS</b></a>
 			</div>
 		</nav>
 
@@ -68,7 +68,7 @@
 		</article>
 
 		<div id="bt-agend">
-			<a href="https://forms.gle/dL8RAVzSMuArWhC46" target="_blank"> <img id="agend" src="img/agend.png"> </a>
+			<a href="https://forms.gle/dL8RAVzSMuArWhC46" target="_blank"><img id="agend" src="img/agend.png"></a>
 		</div>
 
 		<div id="topo">
@@ -164,45 +164,58 @@
 		</section>
 
 		<section id="pag-depoimentos">
-
 			<div id="text-can">
 				<h1>Depoimentos</h1>
 			</div>
-			
+
 			<div class="container-3">
-				
-				<div class="gallery-wrapper">
-					<div class="gallery">
-						<img src="img/dep1.png" alt="depoimentos" class="item current-item">
-						<img src="img/dep2.png" alt="depoimentos" class="item current-item">
-						<img src="img/dep3.png" alt="depoimentos" class="item current-item">
-						<img src="img/dep4.png" alt="depoimentos" class="item current-item">
-						<img src="img/dep5.png" alt="depoimentos" class="item current-item">
-						<img src="img/dep6.png" alt="depoimentos" class="item current-item">
+				<div class="gallery">
+					<img src="img/dep1.png" alt="depoimentos" class="item">
+					<img src="img/dep2.png" alt="depoimentos" class="item">
+					<img src="img/dep3.png" alt="depoimentos" class="item">
+					<img src="img/dep4.png" alt="depoimentos" class="item">
+					<img src="img/dep5.png" alt="depoimentos" class="item">
+					<img src="img/dep6.png" alt="depoimentos" class="item">
+				</div>
+			</div>
+		  </section>
+
+		  <script>
+			const gallery = document.querySelector('.gallery');
+			const items = document.querySelectorAll('.item');
+			const itemWidth = items[0].offsetWidth + 20; // Considere a largura do item e a lacuna
+		
+			let currentIndex = 0;
+		
+			function updateGallery() {
+			  gallery.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
+			}
+		
+			function nextItem() {
+			  currentIndex = (currentIndex + 1) % items.length;
+			  updateGallery();
+			}
+		
+			function prevItem() {
+			  currentIndex = (currentIndex - 1 + items.length) % items.length;
+			  updateGallery();
+			}
+		
+			// Automaticamente avança para o próximo item a cada 3 segundos
+			setInterval(nextItem, 3000);
+		
+			document.addEventListener('DOMContentLoaded', updateGallery);
+		  </script>
+
+		<div id="pag-podcast">
+			<div id="left-pagina">
+				<div id="ttl-pod">
+					<img  id="img-spot" src="img/podcast2.png">
+					<div id="texto-log-s">
+						<h1 id="h1-mod2">Encontros</h1>
+						<h2 id="h2-mod1">Podcast</h2>
 					</div>
 				</div>
-			</div>
-		</section>
-
-
-
-		<article id="pag-podcast">
-
-
-
-			<div id="left-pagina">
-
-				<div id="ttl-pod">
-				
-				<img  id="img-spot" src="img/podcast2.png">
-				<div id="texto-log-s">
-					<h1 id="h1-mod2">Encontros</h1>
-					<h2 id="h2-mod1">Podcast</h2>
-				</div>
-
-			</div>
-
-				
 
 				<h2 id="h2-mod2">Ouça o nosso podcast no Spotify!</h2>
 
@@ -212,38 +225,15 @@
 
 				<br><br>Um dos principais objetivos da nossa clínica de psicologia ao divulgar o nosso trabalho é alcançar um maior número de pessoas.
 
-				<br><br>Se você se interessou, clique no link abaixo para ter acesso a um dos nossos episódios.</p>
+				<br><br>Se você se interessou, clique no link abaixo para ter acesso a um dos nossos episódios.</p><br>
 
-				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3CHvb6qqTXP6rny6SRNnyU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-				<br>
-
-				
-
-			    <div id="div-ouvir">
-			    	<a id="bt-ouvir" href="https://open.spotify.com/episode/3CHvb6qqTXP6rny6SRNnyU?si=71ca5169726347c0" target="_blank">OUVIR</a>
-			     </div>
-
+				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3CHvb6qqTXP6rny6SRNnyU?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 			</div>
 
-			
-
 			<div id="img-po">
-
-			    <img id="img-pod" src="img/podcast.png" >
-
-             <svg class="mask">
-
-			    	<clipPath id="svg-mask2" clipPathUnits="objectBoudingBox">
-
-					<path d="M296.327 389.086C-33.463 405.303 -3.90623 232.912 15.6958 177.297C44.2178 96.3732 188.083 -26.363 363.128 5.22237C447.833 6.95477 498.276 147.201 470.49 252.551C470.282 388.782 379.13 385.014 296.327 389.086Z" fill="url(#pattern0)" shape-rendering="crispEdges"/>
-		
-					
-				     </clipPath>
-                </svg>
-
-              </div>  
-
-		</article>
+			   	<img id="img-pod" src="img/podcast.png">
+            </div>  
+		</div>
 
 		<div class="rodape">
 
@@ -263,6 +253,9 @@
 				<div>
 					<a class="menu" href="#pag-podcast">PODCAST</a>
 				</div>
+				<div>
+					<a class="menu" href="https://forms.gle/dL8RAVzSMuArWhC46" target="_blank">AGENDAMENTOS</a>
+				</div>
 			</div>
 
 			<div class="container-icones">
@@ -276,8 +269,7 @@
 			</div>
 
 			<div class="mapa">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.0709245045473!2d-47.7709536!3d-15.9053548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a202ce335cda3%3A0x7f1ad2dd1f97a0ca!2sRua%2056%2C%20120%20-%20Centro%2C%20Bras%C3%ADlia%20-%20DF%2C%2071691-019!5e0!3m2!1spt-BR!2sbr!4v1687304740871!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.072258440922!2d-47.770943!3d-15.9052849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a21f5a1abfbc9%3A0x9fbce66cd77e5d37!2sEncontros%20Psicologia!5e0!3m2!1spt-BR!2sbr!4v1701100538964!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>			</div>
 		</div>
 
 		<footer>Desenvolvido por Andersen Facundo, Felipe Augusto e Mateus Aires - 2023</footer>
