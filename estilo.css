@@ -410,5 +410,167 @@ footer{
 	font-size: 1.2em;
 }
 
-/* MOBILE */
-/* @media screen and (max-width: 390px)
+@media screen and (max-width: 390px) {
+	body {
+	  font-size: 12px; /* Ajuste o tamanho da fonte conforme necessário */
+	}
+  
+	nav {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	}
+  
+	.container-menu-icones {
+	  margin-left: 0;
+	}
+  
+	#img-icones {
+	  width: 30px;
+	  height: 30px;
+	  padding: 5px;
+	}
+  
+	.container-menu-text {
+	  text-align: center;
+	  margin-right: 0;
+	}
+  
+	header {
+	  margin-left: 0;
+	  margin-right: 0;
+	}
+  
+	article {
+	  padding: 20px;
+	  margin-left: 10px;
+	  margin-right: 10px;
+	}
+  
+	.container-descricao {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	#descricao-img {
+	  margin-top: 10px;
+	  margin-bottom: 20px;
+	  margin-left: 0;
+	}
+  
+	.img-ppagina {
+	  width: 100%;
+	  height: auto;
+	  clip-path: none;
+	}
+  
+	#bt-agend {
+	  right: 10px;
+	  bottom: 60px;
+	}
+  
+	#topo {
+	  right: 10px;
+	  bottom: 12px;
+	}
+  
+	main {
+	  padding: 30px;
+	}
+  
+	.card {
+	  width: 100%;
+	}
+  
+	#pag-espaco {
+	  padding: 30px;
+	}
+  
+	#cont-esp {
+	  flex-direction: column;
+	}
+  
+	.container-2 {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	#img-esp {
+	  width: 100%;
+	  height: auto;
+	  margin: 10px 0;
+	}
+  
+	#texto {
+	  margin-top: 20px;
+	  margin-left: 0;
+	}
+  
+	#pag-depoimentos {
+	  padding: 30px;
+	}
+  
+	.gallery {
+	  flex-direction: column;
+	}
+  
+	.item {
+	  width: 100%;
+	  height: auto;
+	  margin-bottom: 20px;
+	}
+  
+	#pag-podcast {
+	  margin-right: 10px;
+	  margin-left: 10px;
+	  padding: 40px;
+	  grid-template-areas:
+		"lp"
+		"img";
+	}
+  
+	#ttl-pod {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	#img-spot {
+	  width: 50px;
+	  height: 50px;
+	}
+  
+	#left-pagina {
+	  margin-bottom: 20px;
+	}
+  
+	#img-pod {
+	  width: 100%;
+	  height: auto;
+	  margin-left: 0;
+	  margin-top: 20px;
+	}
+  
+	.rodape {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	}
+  
+	#menu-rodape {
+	  margin-left: 0;
+	}
+  
+	.icone-rodape {
+	  margin-left: 0;
+	  margin-right: 0;
+	}
+  
+	.container-icones {
+	  margin-top: 20px;
+	}
+  
+	footer {
+	  font-size: 1em;
+	}
+  }
+  
