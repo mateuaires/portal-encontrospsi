@@ -416,26 +416,28 @@ footer{
 	}
   
 	nav {
-	  flex-direction: column;
-	  align-items: center;
-	  text-align: center;
+		flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+		align-items: flex-start; /* Alinha os itens à esquerda */
+	  }
+	
+	  .container-menu-icones {
+		margin-left: 0; /* Remove a margem à esquerda */
+		margin-bottom: 10px; /* Adiciona espaço entre os ícones e o texto */
+	  }
+	
+	  .container-menu-text {
+		margin: 0; /* Remove a margem direita */
+	  }
+	
+	  .menu {
+		display: block; /* Garante que cada item de menu ocupe uma linha inteira */
+		padding: 10px; /* Adiciona um espaçamento interno aos itens de menu */
+	  }
+	
+	  #img-icones {
+		margin-right: auto; /* Empurra os ícones para a esquerda para alinhá-los corretamente */
+	  }
 	}
-  
-	.container-menu-icones {
-	  margin-left: 0;
-	}
-  
-	#img-icones {
-	  width: 30px;
-	  height: 30px;
-	  padding: 5px;
-	}
-  
-	.container-menu-text {
-	  text-align: center;
-	  margin-right: 0;
-	}
-  
 	header {
 	  margin-left: 0;
 	  margin-right: 0;
