@@ -135,12 +135,11 @@ li{
 #bt-agend:hover::before {
 	content: "Agendamentos";
 	position: absolute;
-	left: -110px;
+	left: -130px;
 	top: 50%;
 	background-color: #f8f8f8;
 	font-family: 'Work Sans', cursive;
 	font-weight: 600;
-
 	color: #0a0a0a;
 	padding: 10px;
 	border-radius: 5px;
@@ -367,7 +366,7 @@ main h1{
 #img-pod{
 	width: 473.28px;
     height: 390.02px;
-	border-radius: 20px;
+    border-radius: 20px;
 }
 
 .rodape{
