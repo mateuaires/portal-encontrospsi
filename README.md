@@ -34,5 +34,5 @@ Além disso, estamos desenvolvendo de um sistema de triagem, que facilitará a m
 [Tabela](https://docs.google.com/document/d/1VjHnzXunMZ1P3ColXXCZ8EX083d5y-71LdPKLM8u5XQ/edit?usp=sharing)
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/137817410/283873269-00ea3831-ef1d-4fba-80af-b31adc712c2d.png" width="500px"/>)
+<img src="https://user-images.githubusercontent.com/137817410/283873269-00ea3831-ef1d-4fba-80af-b31adc712c2d.png" width="500px"/>
 </div>
