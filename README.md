@@ -5,7 +5,7 @@ Além disso, o projeto estabelece um espaço online informativo sobre a clínica
 
 [Documentação](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing)
 
-[Hospedagem](https://mateuaires.github.io/ProjetoIntegradorII/)
+[Hospedagem](https://mateuaires.github.io/encontros-psicologia/)
 
 ## Sobre a equipe
 Nós, Anderson Facundo, Felipe Augusto e Mateus Aires, somos alunos do Instituto Federal de Brasília do curso Tecnólogo em Sistemas para Internet e formamos a equipe responsável pelo projeto.
