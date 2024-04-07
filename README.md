@@ -27,7 +27,7 @@ O layout está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6n
 A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/encontros-psicologia/).
 
 ## Licença
-Este projeto está sob a licença MIT.
+Este projeto está sob a [Licença MIT](https://github.com/mateuaires/encontros-psicologia/tree/main?tab=MIT-1-ov-file).
 
 ## Autores
 [Andersen Facundo](https://www.linkedin.com/in/andersen-f-1771ab96/)
