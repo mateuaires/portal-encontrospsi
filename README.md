@@ -1,4 +1,5 @@
 # Sistema de Triagem da Encontros Psicologia
+[Inserir logo da clínica]
 
 ## Sobre
 A operação de coleta de informações de novos pacientes na clínica Encontros Psicologia é realizada manualmente pelos psicólogos, através de canais pouco seguros, o que torna o processo trabalhoso. Além disso, a ausência de uma presença online para a clínica compromete sua comunicação de forma ampla com o público.
