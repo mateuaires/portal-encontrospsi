@@ -15,18 +15,18 @@ Tecnologias utilizadas no projeto:
 * [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-## Layout
-O layout do sistema está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6nDRLevxV/Projeto-Final?type=design&node-id=0%3A1&mode=design&t=OuibXtjtGZmeSmlw-1).
-
+## Projeto
 #### Documentação
-A documentação do projeto está disponível no [Google Docs](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing).
-[Migrar para o 
+A documentação está disponível no [Google Docs](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing).
+[Migrar para o Microsoft world]
 
-## Hospedagem
-A hospedagem do site está disponível no [GitPages](https://mateuaires.github.io/encontros-psicologia/).
+#### Layout
+O layout do está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6nDRLevxV/Projeto-Final?type=design&node-id=0%3A1&mode=design&t=OuibXtjtGZmeSmlw-1).
+
+#### Hospedagem
+A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/encontros-psicologia/).
 
 ## Licença
 Este projeto está sob a licença MIT.
 
 ## Autores
-Nós, Anderson Facundo, Felipe Augusto e Mateus Aires, somos alunos do Instituto Federal de Brasília do curso Tecnólogo em Sistemas para Internet e formamos a equipe responsável pelo projeto.
