@@ -20,7 +20,7 @@ Tecnologias utilizadas no projeto:
 A documentação está disponível no [Google Docs](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing).
 
 #### Layout
-O layout do está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6nDRLevxV/Projeto-Final?type=design&node-id=0%3A1&mode=design&t=OuibXtjtGZmeSmlw-1).
+O layout está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6nDRLevxV/Projeto-Final?type=design&node-id=0%3A1&mode=design&t=OuibXtjtGZmeSmlw-1).
 
 #### Hospedagem
 A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/encontros-psicologia/).
