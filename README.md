@@ -7,6 +7,13 @@ Diante dessa situação, foi proposta a implementação de um sistema de pré-at
 
 O projeto inclui também o desenvolvimento de um espaço online informativo sobre a clínica, onde o público encontrará informações relevantes sobre o consultório, seus serviços e equipe. 
 
+## Apresentação
+[Inserir apresentação do projeto]
+
+## Tecnologias
+Tecnologias utilizadas no projeto:
+
+
 [Documentação](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing)
 
 [Hospedagem](https://mateuaires.github.io/encontros-psicologia/)
