@@ -30,3 +30,6 @@ A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/en
 Este projeto está sob a licença MIT.
 
 ## Autores
+[Andersen Facundo](https://www.linkedin.com/in/andersen-f-1771ab96/)
+[Felipe Augusto]
+[Mateus Aires](https://www.linkedin.com/mateuaires)
