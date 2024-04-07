@@ -32,6 +32,8 @@ Este projeto está sob a licença MIT.
 ## Autores
 [Andersen Facundo](https://www.linkedin.com/in/andersen-f-1771ab96/)
 <br>
+<br>
 [Felipe Augusto]
-<br}>
-[Mateus Aires](https://www.linkedin.com/mateuaires)
+<br>
+<br>
+[Mateus Aires](https://www.linkedin.com/in/mateuaires/)
