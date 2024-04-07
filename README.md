@@ -18,9 +18,14 @@ Tecnologias utilizadas no projeto:
 ## Layout
 O layout do sistema está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6nDRLevxV/Projeto-Final?type=design&node-id=0%3A1&mode=design&t=OuibXtjtGZmeSmlw-1).
 
-[Documentação](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing)
+## Documentação
+A documentação do projeto está disponível no [Google Docs](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing)
 
-[Hospedagem](https://mateuaires.github.io/encontros-psicologia/)
+## Hospedagem
+A hospedagem do site está disponível no [GitPages](https://mateuaires.github.io/encontros-psicologia/)
 
-## Sobre a equipe
+## Licença
+Este projeto está sob a licença MIT.
+
+## Autores
 Nós, Anderson Facundo, Felipe Augusto e Mateus Aires, somos alunos do Instituto Federal de Brasília do curso Tecnólogo em Sistemas para Internet e formamos a equipe responsável pelo projeto.
