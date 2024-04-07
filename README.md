@@ -1,7 +1,11 @@
-# Sistema de Triagem da Clínica Encontros Psicologia
-O sistema de pré-atendimento é projetado para coletar dados dos pacientes através de um formulário, tornando mais fácil para os profissionais da clínica realizarem a triagem com todas as informações já registradas. Isso permite que os psicólogos selecionem seus pacientes de forma mais eficiente, otimizando o processo de agendamento e garantindo uma experiência eficaz para todos os envolvidos.
+# Sistema de Triagem da Encontros Psicologia
 
-Além disso, o projeto estabelece um espaço online informativo sobre a clínica, servindo como uma fonte de apoio para os pacientes, onde eles podem encontrar informações relevantes a respeito do consultório.
+## Sobre
+A operação de coleta de informações de novos pacientes na clínica Encontros Psicologia é realizada manualmente pelos psicólogos, através de canais pouco seguros, o que torna o processo trabalhoso. Além disso, a ausência de uma presença online para a clínica compromete sua comunicação de forma ampla com o público.
+
+Diante dessa situação, foi proposta a implementação de um sistema de pré-atendimento projetado para coletar os dados dos pacientes por meio de um formulário online. Esse método facilita aos profissionais a realização da triagem, uma vez que todas as informações necessárias estarão registradas. Dessa forma, os psicólogos poderão selecionar seus pacientes de forma eficiente, otimizando o processo de agendamento.
+
+O projeto inclui também o desenvolvimento de um espaço online informativo sobre a clínica, onde o público encontrará informações relevantes sobre o consultório, seus serviços e equipe. 
 
 [Documentação](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing)
 
