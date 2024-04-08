@@ -1,4 +1,4 @@
-# <p align="center">Triagem da Encontros Psicologia</p>
+# <p align="center">Sistema de Triagem Encontros Psicologia</p>
 ![Logo da clínica](https://raw.githubusercontent.com/mateuaires/encontros-psicologia/main/img/banner.png)
 
 <div align="center">
