@@ -1,4 +1,4 @@
-# Triagem da Encontros Psicologia
+# <p align="center">Triagem da Encontros Psicologia</p>
 ![Logo da clínica](https://raw.githubusercontent.com/mateuaires/encontros-psicologia/main/img/banner.png)
 
 <div align="center">
@@ -7,6 +7,15 @@
     <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="#licença">Licença</a>
 </div>
+
+<div align="center">
+<br>
+    
+![GitHub repo size](https://img.shields.io/github/repo-size/mateuaires/triagem-encontrospsi) ![GitHub License](https://img.shields.io/github/license/mateuaires/triagem-encontrospsi) ![GitHub last commit](https://img.shields.io/github/last-commit/mateuaires/triagem-encontrospsi) ![GitHub language count](https://img.shields.io/github/languages/count/mateuaires/triagem-encontrospsi)
+</div>
+
+
+
 
 -----
 
@@ -33,7 +42,7 @@ A documentação está disponível no [Google Docs](https://docs.google.com/docu
 O layout está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6nDRLevxV/Projeto-Final?type=design&node-id=0%3A1&mode=design&t=OuibXtjtGZmeSmlw-1).
 
 #### Hospedagem
-A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/encontros-psicologia/).
+A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/triagem-encontrospsi/).
 
 ## :small_orange_diamond:Licença
 Este projeto está sob a [Licença MIT](https://github.com/mateuaires/encontros-psicologia/tree/main?tab=MIT-1-ov-file).
