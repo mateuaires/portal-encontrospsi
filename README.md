@@ -1,5 +1,14 @@
-# Sistema de Triagem da Encontros Psicologia
-[Inserir logo da clínica]
+# Triagem da Encontros Psicologia
+![Logo da clínica](https://raw.githubusercontent.com/mateuaires/encontros-psicologia/main/img/banner.png)
+
+<div align="center">
+    <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#licença">Licença</a>
+</div>
+
+-----
 
 ## Sobre
 A operação de coleta de informações de novos pacientes na clínica Encontros Psicologia é realizada manualmente pelos psicólogos, através de canais pouco seguros, o que torna o processo trabalhoso. Além disso, a ausência de uma presença online para a clínica compromete sua comunicação de forma ampla com o público.
