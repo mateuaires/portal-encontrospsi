@@ -10,22 +10,22 @@
 
 -----
 
-## Sobre
+## :small_orange_diamond:Sobre
 A operação de coleta de informações de novos pacientes na clínica Encontros Psicologia é realizada manualmente pelos psicólogos, através de canais pouco seguros, o que torna o processo trabalhoso. Além disso, a ausência de uma presença online para a clínica compromete sua comunicação de forma ampla com o público.
 
 Diante dessa situação, foi proposta a implementação de um sistema de pré-atendimento projetado para coletar os dados dos pacientes por meio de um formulário online. Esse método facilita aos profissionais a realização da triagem, uma vez que todas as informações necessárias estarão registradas. Dessa forma, os psicólogos poderão selecionar seus pacientes de forma eficiente, otimizando o processo de agendamento.
 
 O projeto inclui também o desenvolvimento de um espaço online informativo sobre a clínica, onde o público encontrará informações relevantes sobre o consultório, seus serviços e equipe. 
 
-## Apresentação
+## :small_orange_diamond:Apresentação
 [Inserir apresentação do projeto]
 
-## Tecnologias
+## :small_orange_diamond: Tecnologias
 Tecnologias utilizadas no projeto:
 * [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-## Projeto
+## :small_orange_diamond:Projeto
 #### Documentação
 A documentação está disponível no [Google Docs](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing).
 
@@ -35,10 +35,10 @@ O layout está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6n
 #### Hospedagem
 A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/encontros-psicologia/).
 
-## Licença
+## :small_orange_diamond:Licença
 Este projeto está sob a [Licença MIT](https://github.com/mateuaires/encontros-psicologia/tree/main?tab=MIT-1-ov-file).
 
-## Autores
+## :small_orange_diamond:Autores
 [Andersen Facundo](https://www.linkedin.com/in/andersen-f-1771ab96/)
 <br>
 <br>
