@@ -2,10 +2,10 @@
 ![Logo da clínica](https://raw.githubusercontent.com/mateuaires/encontros-psicologia/main/img/banner.png)
 
 <div align="center">
-    <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#licença">Licença</a>
+    <a href="#small_orange_diamondsobre">Sobre</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#small_orange_diamond-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#small_orange_diamondprojeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#small_orange_diamondlicença">Licença</a>
 </div>
 
 <div align="center">
@@ -15,19 +15,14 @@
 </div>
 
 
-
-
 -----
 
 ## :small_orange_diamond:Sobre
-A operação de coleta de informações de novos pacientes na clínica Encontros Psicologia é realizada manualmente pelos psicólogos, através de canais pouco seguros, o que torna o processo trabalhoso. Além disso, a ausência de uma presença online para a clínica compromete sua comunicação de forma ampla com o público.
-
+<div align="justify">A operação de coleta de informações de novos pacientes na clínica Encontros Psicologia é realizada manualmente pelos psicólogos, através de canais pouco seguros, o que torna o processo trabalhoso. Além disso, a ausência de uma presença online para a clínica compromete sua comunicação de forma ampla com o público.
+<br><br>
 Diante dessa situação, foi proposta a implementação de um sistema de pré-atendimento projetado para coletar os dados dos pacientes por meio de um formulário online. Esse método facilita aos profissionais a realização da triagem, uma vez que todas as informações necessárias estarão registradas. Dessa forma, os psicólogos poderão selecionar seus pacientes de forma eficiente, otimizando o processo de agendamento.
-
-O projeto inclui também o desenvolvimento de um espaço online informativo sobre a clínica, onde o público encontrará informações relevantes sobre o consultório, seus serviços e equipe. 
-
-## :small_orange_diamond:Apresentação
-[Inserir apresentação do projeto]
+<br><br>
+O projeto inclui também o desenvolvimento de um espaço online informativo sobre a clínica, onde o público encontrará informações relevantes sobre o consultório, seus serviços e equipe.</div>
 
 ## :small_orange_diamond: Tecnologias
 Tecnologias utilizadas no projeto:
@@ -44,6 +39,9 @@ O layout está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6n
 #### Hospedagem
 A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/triagem-encontrospsi/).
 
+#### Apresentação
+A apresentação está disponível no [Canva](https://www.canva.com/design/DAFwy9pj8vQ/zjveoQ4cudwYAwI2aPJFtw/edit?utm_content=DAFwy9pj8vQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+
 ## :small_orange_diamond:Licença
 Este projeto está sob a [Licença MIT](https://github.com/mateuaires/encontros-psicologia/tree/main?tab=MIT-1-ov-file).
 
@@ -51,7 +49,7 @@ Este projeto está sob a [Licença MIT](https://github.com/mateuaires/encontros-
 [Andersen Facundo](https://www.linkedin.com/in/andersen-f-1771ab96/)
 <br>
 <br>
-[Felipe Augusto]
+Felipe Augusto
 <br>
 <br>
 [Mateus Aires](https://www.linkedin.com/in/mateuaires/)
