@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Work+Sans:wght@300;600&display=swap');
 *{margin: 0; padding: 0; box-sizing: border-box;
 font-family: Arial, Helvetica, sans-serif;}
@@ -21,7 +20,7 @@ body {
     border-radius: 8px;
    
 
-.ilustracao {
+.ilustracao{
     flex: auto;
     width: 70%;
     
@@ -38,6 +37,8 @@ body {
    
 }
 
+/*Sessão do login */
+
 .login-form {
     flex: auto;
     width: 30%;
@@ -50,7 +51,7 @@ body {
     justify-content: center;
 }
 
-.logo>img {
+.logo > img {
     width: 100px;
     height: 100px;
     margin-bottom: 20px;
@@ -58,6 +59,8 @@ body {
     top: -90px;
 }
 
+
+/*Formulário*/
 form {
     position: relative;
     top: -60px;
@@ -86,15 +89,25 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 
+
 .lembrar >input {
     margin-right: 8px;
 }
+
 
 .lembrar > a {
     margin-left: 20px;
     color: #333;
     text-decoration: none;
 }
+
+/* Botão */ 
+ button > a {
+   font-family: sans-serif;
+   text-decoration: none;
+   color: white;
+}
+
 
 button {
     width: 150px;
@@ -108,8 +121,13 @@ button {
     position: relative;
     left: 30%;
     bottom: -90px;
+    font-family: sans-serif;
+    text-decoration: none ;
+    color: #fff;
+    
 }
 
 button:hover {
-    background-color: #e35c50;
+background-color: #f8583fa2;
+   
 }

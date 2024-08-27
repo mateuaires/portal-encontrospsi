@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encontros Psicologia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andersen Facundo, Felipe Augusto e Mateus Aires">
+    <meta name="keywords" content="psicologia, terapia, sao sebastiao, podcast de psicologia" />
+    <meta name="description"
+        content="Serviço de psicoterapia online para todo o Brasil e presencial em São Sebastião - DF. Nossos atendimentos prestados são destinados a pessoas de todas as faixas etárias">
+    <link rel="stylesheet" href="estilo-painel.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/icone-aba.ico">
+</head>
+
+<body>
+    <div class="container-1">
+        <header>
+            <div class="user-icon">👤</div>
+            <div class="username">Nome do usuário</div>
+            <button class="botao"><a href="login.html" rel="prev">Sair</a></button>
+
+        </header>
+        <main>
+            <section class="painel">
+                <div class="painel-section">
+                    <h2>NÃO TRIADO</h2>
+                    <ul>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0102024">Cliente#0102024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0282024">Cliente#0282024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0332024">Cliente#0332024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0702024">Cliente#0702024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0162024">Cliente#0162024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0112024">Cliente#0112024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#5102024">Cliente#5102024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0102024">Cliente#0102024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0102024">Cliente#0102024</a></li>
+                    </ul>
+                </div>
+                <div class="painel-section">
+                    <h2>EM ANDAMENTO</h2>
+                    <ul>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0712024">Cliente#0712024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0682024">Cliente#0682024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0932024">Cliente#0932024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0792024">Cliente#0792024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0162024">Cliente#0162024</a></li>
+                    </ul>
+                </div>
+                <div class="painel-section">
+                    <h2>MEUS PACIENTES</h2>
+                    <ul>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0902024">Cliente#0902024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0982024">Cliente#0982024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0932024">Cliente#0932024</a></li>
+                        <li><a href="#" class="open-modal" data-client="Cliente#0602024">Cliente#0602024</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal: pop up dos clientes não triados-->
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+
+            <div class="container-2">
+                <h2 id="modal-client">Cliente#0102024</h2>
+
+                <h3>NÃO TRIADO</h3>
+
+            </div>
+
+            <form class="container-2-01">
+                <div class="card-1">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+
+                    <label for="data-nascimento">Data de nascimento:</label>
+                    <input type="text" id="data-nascimento" name="data-nascimento" placeholder="dd/mm/aaaa">
+
+                    <label for="resposavel">Responsável Legal:</label>
+                    <input type="text" id="resposavel" name="resposavel">
+
+                    <label for="whatsapp">Número de Whatsapp:</label>
+                    <input type="text" id="whatsapp" name="whatsapp" placeholder="(00) 91234-5678">
+
+                    <label for="psicologico">Ocorrência psicológica:</label>
+                    <textarea id="psicologico" name="psicologico"></textarea>
+
+
+                </div>
+
+                <div class="card-2">
+
+                    <fieldset>
+                        <legend>Qual a sua preferência quanto à forma de atendimento:</legend>
+                        <label><input type="radio" name="attendance" value="Presencial"> Presencial</label>
+                        <label><input type="radio" name="attendance" value="Online" checked> Online</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Qual a sua preferência quanto ao turno de atendimento:</legend>
+                        <label><input type="radio" name="shift" value="Manhã" checked> Manhã</label>
+                        <label><input type="radio" name="shift" value="Tarde"> Tarde</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Selecione uma das três opções de pagamento que melhor se adapta ao seu orçamento:
+                        </legend>
+                        <label><input type="radio" name="payment" value="Opção 1"> Passar pelas partes
+                            interessadas</label>
+                        <label><input type="radio" name="payment" value="Opção 2"> Passar pelas partes interessadas
+                            1</label>
+                        <label><input type="radio" name="payment" value="Opção 3" checked> Passar pelas partes
+                            interessadas 2</label>
+                    </fieldset>
+                </div>
+            </form>
+
+            <div class="modal-buttons">
+
+                <button type="button" class="button close-modal">Voltar</button>
+
+                <button id="" type="submit" class="button close-modal">Aceitar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal02: pop up dos clientes  em andamento-->
+
+    <div id="modal-02" class="modal">
+        <div class="modal-content">
+
+            <div class="container-2">
+                <h2 id="modal-client">Cliente#0102024</h2>
+
+                <h3>EM ANDAMENTO</h3>
+
+            </div>
+
+            <form class="container-2-01">
+                <div class="card-1">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+
+                    <label for="data-nascimento">Data de nascimento:</label>
+                    <input type="text" id="data-nascimento" name="data-nascimento" placeholder="dd/mm/aaaa">
+
+                    <label for="resposavel">Responsável Legal:</label>
+                    <input type="text" id="resposavel" name="resposavel">
+
+                    <label for="whatsapp">Número de Whatsapp:</label>
+                    <input type="text" id="whatsapp" name="whatsapp" placeholder="(00) 91234-5678">
+
+                    <label for="psicologico">Ocorrência psicológica:</label>
+                    <textarea id="psicologico" name="psicologico"></textarea>
+
+
+                </div>
+
+                <div class="card-2">
+
+                    <fieldset>
+                        <legend>Qual a sua preferência quanto à forma de atendimento:</legend>
+                        <label><input type="radio" name="attendance" value="Presencial"> Presencial</label>
+                        <label><input type="radio" name="attendance" value="Online" checked> Online</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Qual a sua preferência quanto ao turno de atendimento:</legend>
+                        <label><input type="radio" name="shift" value="Manhã" checked> Manhã</label>
+                        <label><input type="radio" name="shift" value="Tarde"> Tarde</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Selecione uma das três opções de pagamento que melhor se adapta ao seu orçamento:
+                        </legend>
+                        <label><input type="radio" name="payment" value="Opção 1"> Passar pelas partes
+                            interessadas</label>
+                        <label><input type="radio" name="payment" value="Opção 2"> Passar pelas partes interessadas
+                            1</label>
+                        <label><input type="radio" name="payment" value="Opção 3" checked> Passar pelas partes
+                            interessadas 2</label>
+                    </fieldset>
+                </div>
+            </form>
+
+            <div class="modal-buttons">
+
+                <button type="button" class="button close-modal">Voltar</button>
+
+                <button id="" type="submit" class="button close-modal">Aceitar</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Modal03: pop up dos MEUS CLIENTES -->
+
+    <div id="modal-03" class="modal">
+        <div class="modal-content">
+
+            <div class="container-2">
+                <h2 id="modal-client">Cliente#0102024</h2>
+
+                <h3>MEUS CLIENTES</h3>
+
+            </div>
+
+            <form class="container-2-01">
+                <div class="card-1">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+
+                    <label for="data-nascimento">Data de nascimento:</label>
+                    <input type="text" id="data-nascimento" name="data-nascimento" placeholder="dd/mm/aaaa">
+
+                    <label for="resposavel">Responsável Legal:</label>
+                    <input type="text" id="resposavel" name="resposavel">
+
+                    <label for="whatsapp">Número de Whatsapp:</label>
+                    <input type="text" id="whatsapp" name="whatsapp" placeholder="(00) 91234-5678">
+
+                    <label for="psicologico">Ocorrência psicológica:</label>
+                    <textarea id="psicologico" name="psicologico"></textarea>
+
+
+                </div>
+
+                <div class="card-2">
+
+                    <fieldset>
+                        <legend>Qual a sua preferência quanto à forma de atendimento:</legend>
+                        <label><input type="radio" name="attendance" value="Presencial"> Presencial</label>
+                        <label><input type="radio" name="attendance" value="Online" checked> Online</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Qual a sua preferência quanto ao turno de atendimento:</legend>
+                        <label><input type="radio" name="shift" value="Manhã" checked> Manhã</label>
+                        <label><input type="radio" name="shift" value="Tarde"> Tarde</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Selecione uma das três opções de pagamento que melhor se adapta ao seu orçamento:
+                        </legend>
+                        <label><input type="radio" name="payment" value="Opção 1"> Passar pelas partes
+                            interessadas</label>
+                        <label><input type="radio" name="payment" value="Opção 2"> Passar pelas partes interessadas
+                            1</label>
+                        <label><input type="radio" name="payment" value="Opção 3" checked> Passar pelas partes
+                            interessadas 2</label>
+                    </fieldset>
+                </div>
+            </form>
+
+            <div class="modal-buttons">
+
+                <button type="button" class="button close-modal">Voltar</button>
+
+                <button id="" type="submit" class="button close-modal">Aceitar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script-abrirMod.js"></script>
+
+</body>
+
+</html>
