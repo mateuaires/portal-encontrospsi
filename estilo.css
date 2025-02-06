@@ -1,3 +1,4 @@
+/* Importando fontes e tirando margens da página */
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Work+Sans:wght@300;600&display=swap');
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
@@ -6,11 +7,13 @@ html{
 	scroll-padding-top: 70px;
 }
 
+/* Configuração de corpo da página*/
 body{
 	background-color: #FAE8DA;
 	justify-content: right;
 }
 
+/* Menu de navegação*/
 nav{
 	background-color: #D1675F;
 	display: flex;
@@ -54,15 +57,13 @@ a{
 	color: #CCCCCC;
 }
 
-header{
-	background-color: #FAE8DA;
-}
-
+/* Banner da página*/
 #img-header{
 	width: 100%;
 	height: 100%;
 }
 
+/* Descrição da clínica*/
 
 h1{
 	font-family: "Meow Script", cursive;
@@ -70,105 +71,79 @@ h1{
 	margin-bottom: 10px;
 }
 
-article h1{
-	color: #AE4E4E;
-}
-
 p{
 	color: #000000;
 	text-align: justify;
 	font: 1em "Work Sans", sans-serif;
 	line-height: 1.5em;
+	font-size: 1.2em;
+
 }
 
-article{
-	padding: 50px;
-	margin-left: 140px;
-	margin-right: 140px;
-}
-
-.container-descricao{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#descricao-img{
-	margin-top: 10px;
-	margin-bottom: 90px;
-	margin-left: 150px;
-}
-
-#mask2{
-	width: 100%;
-	height: 100%;
-}
-
-.mask{
-	width: 0;
-	height:0;
-	position: absolute;
-}
-
-.img-ppagina{
-	width: 440.51px;
-	height: 319.97px;
-	clip-path: url(#svg-mask1);
-}
-
-ul{
-	list-style: url(img/redcircle.png);
-}
-
-li{
+ul li{
 	font: 1em "Work Sans", sans-serif;
 	line-height: 2em;
 }
 
-#bt-agend{
-	position: fixed;
-	right: 30px;
-	bottom: 100px;
-	cursor: pointer;
-	animation: pulse 1s infinite;
+/* Cabeçalho */
+#titulo-banner {
+    text-align: center;
+    padding: 20px 10px;
+    background: linear-gradient(135deg, #fcc59e, #D1675F);
+    color: #fff;
+    border-radius: 0 0 50px 50px;
 }
 
-#bt-agend:hover::before {
-	content: "Agendamentos";
-	position: absolute;
-	left: -130px;
-	top: 50%;
-	background-color: #f8f8f8;
-	font-family: 'Work Sans', cursive;
-	font-weight: 600;
-	color: #0a0a0a;
-	padding: 10px;
-	border-radius: 5px;
-	display: inline-block;
-	transform: translateY(-50%);
-	white-space: nowrap;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-  }
-
-  #bt-agend:hover::before {
-	opacity: 1;
-  }
-
-@keyframes pulse {
-	0% {
-	  transform: scale(1);
-	}
-	50% {
-	  transform: scale(1.1);
-	}
-	100% {
-	  transform: scale(1);
-	}
+header h1 {
+    font-family: "Meow Script", cursive;
+    font-size: 2em;
+    margin: 0;
 }
-#agend{
-	width: 64px;
-	height: 64px;
+
+/* Seção de Descrição */
+.descricao {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.descricao p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #555;
+    line-height: 1.8em;
+}
+
+/* Container de Modalidades */
+.container-descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Lista de modalidades */
+.container-descricao ul {
+    padding: 0px;
+	margin-left: 150px;
+    font-size: 1.1em;
+}
+
+.container-descricao ul li {
+    padding: 10px 0;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.container-descricao ul li:hover {
+    color: #fcc59e;
+    transform: translateX(5px);
+}
+
+/* Imagem */
+.descricao-img img {
+    width: 100%;
+    max-width: 450px;
+	margin-right: 90px;
 }
 
 #topo{

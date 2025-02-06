@@ -42,38 +42,3 @@ OUVIR
 (https://open.spotify.com/episode/3CHvb6qqTXP6rny6SRNnyU?si=71ca5169726347c0)
 
 Desenvolvido por Andersen Facundo, Mateus Aires e Felipe Augusto - 2023
-
------------------------------------------------------
-Formulário:
-
-Triagem da clínica
-Este sistema de triagem busca otimizar o processo de agendamento e garantir uma experiência mais eficaz e conveniente para todos os envolvidos.
-
-Termos de Consentimento para Tratamento de Dados Pessoais
-
-Concordo em fornecer meus dados pessoais para tratamento, de acordo com as disposições da Lei Geral de Proteção de Dados (LGPD) - Lei nº 13.709/2018.
-
-Qual é o seu nome?
-
-Qual é a sua data de nascimento?
-
-Se for menor de idade, digite o nome de seu responsável legal:
-
-Digite seu número de WhatsApp, ou o de seu responsável legal, para entrarmos em contato para mais detalhes sobre a marcação da consulta: 
-(XX)XXXXX-XXXX
-
-Qual a sua preferência quanto à forma de atendimento: 
-1) Presencial
-2) Online
-
-Qual a sua preferência quanto ao turno de atendimento?
-1) Manhã
-2) Tarde
-
-Selecione uma das três opções de pagamento que melhor se adapta ao seu orçamento:
-1)Opção1
-2)Opção2
-3)Opção3
-
-
-
