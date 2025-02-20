@@ -175,14 +175,19 @@ main h1{
 
 .card{
 	width: 200px;
-	background-color: #D1675F;
-	border-radius: 20px;
-	padding: 20px;
-	margin: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+    background-color: #D1675F;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Adiciona a transição suave */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do card em 10% */
 }
 
 .img-card{
@@ -206,57 +211,91 @@ main h1{
 
 /*PÁGINA ESPAÇO*/
 
-#pag-espaco{
-	padding: 50px;
-	display: grid;
-	grid-template-areas:
-		"container-1 container-1"
-		"container-2 container-2";
+#pag-espaco {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    overflow: hidden;
 }
 
-#titulo-esp{
-	justify-content: center;
-	text-align:center;
+.container-mural {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
 }
 
-.titulo-esp{
-	text-align: center;
+.container {
+    transition: transform 0.5s ease-in-out;
+    position: relative;
 }
 
-.container-1{
-	grid-area: container-1;
+.grid-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
 }
 
-#cont-esp{
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
+.grid-imagens img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
-.container-2{
-	grid-area: container-2;
-	display: flex;
-	justify-content: center;
+/* Texto oculto por padrão */
+.texto-mural {
+    width: 35%;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.5;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    right: 5%;
+    background: rgba(255, 233, 222, 0.6); /* Fundo escuro semi-transparente */
+    padding: 15px;
+    border-radius: 10px;
 }
 
-#img-esp{
-	background-color: #F5C5AE;
-	width: 200px;
-	height: 250px;
-	border-radius: 20px;
-	margin: 30px;
-	border: 10%;
-	border-color: #F5C5AE;
-	border: 2.5px solid #F5C5AE;
+
+/* Efeito ao passar o mouse */
+.container-mural:hover .container {
+    transform: translateX(-20%);
 }
 
-#texto{
-	max-width: 300px;
-	text-align: center;
-	margin-top: 110px;
-	margin-left: 40px;
-	font-size: 1.em;
+.container-mural:hover .texto-mural {
+    opacity: 1;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-mural {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+    }
+    .texto-mural {
+        width: 90%;
+        right: 0;
+        text-align: center;
+    }
+    .container-mural:hover .container {
+        transform: translateX(0);
+    }
+}
+
+
+
 
 /*PÁGINA DEPOIMENTOS*/
 
@@ -290,60 +329,91 @@ main h1{
 	border-radius: 15px;
   }
 
-#pag-podcast{
-	margin-right: 100px;
-	margin-left: 100px;
-	padding: 80px;
-	display: grid;
-	grid-template-columns:  1fr 1fr;
-	grid-template-areas: " lp img "
-                         " lp img"
+
+
+
+
+
+
+
+
+
+  #pag-podcast {
+    margin: 5px auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
-#ttl-pod{
-	top: 0px;
-	left: 0px;
-	display: flex;
+#pag-podcast {
 }
 
- #img-spot{
- 	width: 75px;
- 	height: 75px;
+#ttl-pod {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
 }
 
-#h1-mod2{
-	font: 1.5em "Work Sans";
-	line-height: 40px;
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-#h2-mod1{
-	font-family: "Work Sans";
-	position: relative;
-	top: -15px;
+#img-spot {
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+    border-radius: 50%; /* Adiciona borda arredondada */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-#left-pagina{
-	grid-area: lp;
+#h1-mod2 {
+    font: 1.8em "Work Sans", sans-serif;
+    line-height: 1.2;
+    animation: fadeIn 1s forwards 0.3s;
+    color: #333; /* Cor do título */
 }
 
-#h2-mod2{
-	color: #AE4E4E;
-	margin-top: 20px;
-	margin-bottom: 25px;
-	font-family: "Work Sans";
-	text-shadow: #CCCCCC 0.1em 0.1em 0.1em;
+#texto-pod {
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #333; /* Cor do texto */
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.7s;
+	width: 450px;
 }
 
-#img-po{
-    margin-left: 90px;
-    margin-top: 100px;
+#img-po {
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
-#img-pod{
-	width: 473.28px;
-    height: 390.02px;
+#img-pod {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
     border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+#img-pod:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+iframe {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 
 .rodape{
 	padding: 20px;
