@@ -14,7 +14,7 @@ body{
 
 /* Menu de navegação*/
 nav{
-	background-color: #D1675F;
+	background-color: #A5A58D;
 	display: flex;
 	justify-content: space-between;
 	line-height: 50px;
@@ -56,11 +56,26 @@ a{
 	color: #CCCCCC;
 }
 
+
+
+
+
+  
+
+
+
+
 /* Banner da página*/
 #img-header{
 	width: 100%;
 	height: 100%;
+    border-radius: 0 0 100px 100px;
+
 }
+
+
+
+
 
 /* Descrição da clínica*/
 
@@ -79,71 +94,46 @@ p{
 
 }
 
-ul li{
-	font: 1em "Work Sans", sans-serif;
-	line-height: 2em;
-}
 
-/* Cabeçalho */
-#titulo-banner {
-    text-align: center;
-    padding: 20px 10px;
-    background: linear-gradient(135deg, #fcc59e, #D1675F);
-    color: #fff;
-    border-radius: 0 0 50px 50px;
-}
 
-header h1 {
-    font-family: "Meow Script", cursive;
-    font-size: 2em;
-    margin: 0;
-}
+
 
 /* Seção de Descrição */
 .descricao {
-    max-width: 900px;
-    margin: auto;
-    padding: 50px 20px;
-}
-
-.descricao p {
-    font-size: 1.2em;
-    text-align: center;
-    color: #555;
-    line-height: 1.8em;
-}
-
-/* Container de Modalidades */
-.container-descricao {
+    padding: 40px 20px;
+    margin-left: 200px;
+    margin-right: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
+  
 
-/* Lista de modalidades */
-.container-descricao ul {
-    padding: 0px;
-	margin-left: 150px;
-    font-size: 1.1em;
-}
+  .texto-secundario {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6em;
+    margin-top: 20px;
+  }
 
-.container-descricao ul li {
-    padding: 10px 0;
-    font-weight: 600;
-    transition: all 0.3s;
-}
 
-.container-descricao ul li:hover {
-    color: #fcc59e;
-    transform: translateX(5px);
-}
-
-/* Imagem */
-.descricao-img img {
-    width: 100%;
-    max-width: 450px;
-	margin-right: 90px;
-}
+  .descricao-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .descricao-texto {
+    margin-right: 20px;
+    max-width: 600px;
+  }
+  
+  .descricao-imagem img {
+    max-width: 100%;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+	
 
 #topo{
 	position: fixed;
