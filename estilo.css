@@ -1,4 +1,4 @@
-/* Importando fontes e tirando margens da página */
+/* Importante fonte e alterando configurações padrões */
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Work+Sans:wght@300;600&display=swap');
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
@@ -7,14 +7,13 @@ html{
 	scroll-padding-top: 70px;
 }
 
-/* Configuração de corpo da página*/
 body{
-	background-color: #FAE8DA;
+	background-color: #F4E1C1;
 }
 
 /* Menu de navegação */
 nav {
-    background-color: #A5A58D;
+    background-color: #8D6A5D;
     display: flex;
     justify-content: center; /* Centraliza o menu */
     align-items: center;
@@ -25,13 +24,13 @@ nav {
 .container-menu {
     display: flex;
     align-items: center;
-    gap: 80px; /* Aumenta a separação entre os ícones e o texto do menu */
+    gap: 80px;
 }
 
 /* Ícones do menu */
 .container-menu-icones {
     display: flex;
-    gap: 20px; /* Espaçamento entre os ícones */
+    gap: 20px;
 }
 
 /* Estilização dos ícones */
@@ -82,47 +81,20 @@ a {
     text-decoration: none;
 }
 
-
-
-
-
-  
-
-
-
-
 /* Banner da página*/
 #img-header{
 	width: 100%;
 	height: 100%;
     border-radius: 0 0 100px 100px;
-
 }
-
-
-.descricao h1 {
-    text-align: left; /* Alinha o título à esquerda */
-    border-left: 5px solid #D1675F; /* Adiciona uma linha do lado esquerdo */
-    padding-left: 20px; /* Espaço entre o texto e a linha */
-    font-size: 1.8em; /* Ajuste o tamanho do texto conforme necessário */
-    font-family: "Work Sans", sans-serif;
-    color: #333; /* Cor do texto */
-    margin-bottom: 20px; /* Espaço abaixo do título */
-}
-
-
-
-
-/* Descrição da clínica*/
 
 h1{
 	font-family: "Work Sans", sans-serif;
-    text-align: center; /* Alinha o título à esquerda */
-    padding-left: 20px; /* Espaço entre o texto e a linha */
-    font-size: 1.8em; /* Ajuste o tamanho do texto conforme necessário */
-    color: #333; /* Cor do texto */
-    margin-bottom: 20px; /* Espaço abaixo do título */
-
+    text-align: center; 
+    padding-left: 20px;
+    font-size: 1.8em;
+    color: #333; 
+    margin-bottom: 20px;
 }
 
 p{
@@ -131,14 +103,19 @@ p{
 	font: 1em "Work Sans", sans-serif;
 	line-height: 1.5em;
 	font-size: 1em;
-
 }
 
+/* Descrição da clínica*/
+.descricao h1 {
+    text-align: left; 
+    border-left: 5px solid #D1675F; 
+    padding-left: 20px; 
+    font-size: 1.8em; 
+    font-family: "Work Sans", sans-serif;
+    color: #333; 
+    margin-bottom: 20px; 
+}
 
-
-
-
-/* Seção de Descrição */
 .descricao {
     padding: 40px 20px;
     margin-left: 200px;
@@ -146,33 +123,14 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
+}
 
-  .texto-secundario {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6em;
-    margin-top: 20px;
-  }
-
-
-  .descricao-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .descricao-texto {
+.descricao-texto {
     margin-right: 20px;
     max-width: 600px;
-  }
+}
 
-
-
-
-  
-  .descricao-imagem {
+.descricao-imagem {
     position: relative;
     display: inline-block;
 }
@@ -191,15 +149,11 @@ p{
     width: 100%;
     height: 100%;
     border-radius: 100px;
-    background: linear-gradient(to right, rgba(250, 232, 218, 1), rgba(250, 232, 218, 0)) no-repeat;
+    background: linear-gradient(to right, rgba(244, 225, 193, 1), rgba(244, 225, 193, 0)) no-repeat;
     pointer-events: none;
 }
 
-
-
-
-	
-
+/* Botão topo*/
 #topo{
 	position: fixed;
 	right: 30px;
@@ -211,15 +165,10 @@ p{
 	height: 60px;
 }
 
-/*PÁGINA EQUIPE*/
-
+/*Equipe*/
 main{
-	background-color: #fcc59e;
-	padding: 70px;
-}
-
-main h1{
-	margin-left: 30px;
+	background-color: #F2CC8F;
+	padding: 30px;
 }
 
 .container{
@@ -229,7 +178,7 @@ main h1{
 
 .card{
 	width: 200px;
-    background-color: #D1675F;
+    background-color: #8D6A5D;
     border-radius: 20px;
     padding: 20px;
     margin: 10px;
@@ -263,12 +212,10 @@ main h1{
 	text-align: center;
 }
 
-/*PÁGINA ESPAÇO*/
-
+/*Espaço*/
 #pag-espaco {
     text-align: center;
-    padding: 40px 20px;
-    overflow: hidden;
+    padding: 40px;
 }
 
 .container-mural {
@@ -313,11 +260,10 @@ main h1{
     transition: opacity 0.5s ease-in-out;
     position: absolute;
     right: 5%;
-    background: rgba(255, 233, 222, 0.6); /* Fundo escuro semi-transparente */
+    background: rgba(192, 174, 161, 0.6);
     padding: 15px;
     border-radius: 10px;
 }
-
 
 /* Efeito ao passar o mouse */
 .container-mural:hover .container {
@@ -328,39 +274,8 @@ main h1{
     opacity: 1;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .container-mural {
-        flex-direction: column;
-        text-align: center;
-    }
-    .container {
-        width: 100%;
-    }
-    .texto-mural {
-        width: 90%;
-        right: 0;
-        text-align: center;
-    }
-    .container-mural:hover .container {
-        transform: translateX(0);
-    }
-}
-
-
-
-
-/*PÁGINA DEPOIMENTOS*/
-
-#pag-depoimentos {
-	padding: 50px;
-  }
-
-
-
-
-
-  #pag-podcast {
+/*Podcast*/
+#pag-podcast {
     margin: 50px auto;
     padding: 40px;
     display: grid;
@@ -368,22 +283,20 @@ main h1{
     gap: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-	background: linear-gradient(#ffebcc, #fdab6d);
+	background: linear-gradient(#ffebcc, #E07A5F);
 }
 
 #img-spot {
     width: 75px;
     height: 75px;
     margin-right: 20px;
-    border-radius: 50%; /* Adiciona borda arredondada */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #img-po{
 	text-align: right;
 	margin-right:40px;
-
-
 }
 
 #h1-mod2 {
@@ -391,6 +304,7 @@ main h1{
     line-height: 1.6;
     color: #333; /* Cor do título */
 	margin-top: 28px;
+    text-align: left; 
 }
 
 #texto-pod {
@@ -418,24 +332,19 @@ iframe {
     box-shadow: 0 4px 12px rgba(238, 234, 234, 0.644);
 }
 
+/*Depoimentos*/
+#pag-depoimentos {
+	padding: 30px;
+  }
 
-
-
-
-
-
+/*Rodapé*/
 .rodape {
     padding: 20px;
-    background-color: #D1675F;
+    background-color: #8D6A5D;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.rodape:hover {
-    background-color: #b85550; /* Efeito ao passar o mouse */
 }
 
 #menu-rodape{
@@ -451,15 +360,10 @@ iframe {
     font-family: 'Work Sans', sans-serif;
 }
 
-#menu-rodape a:hover {
-    color: #FFD700; /* Efeito hover nos links */
-}
-
 .mapa{
 	margin-right: 20%;
 	margin-top: 35px;
 }
-
 
 #icone-rodape{
 	width: 90px;
@@ -492,8 +396,7 @@ iframe {
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-
-
+/*Rodapé*/
 footer {
     padding: 20px;
     background-color: #33363D;
@@ -503,8 +406,6 @@ footer {
     text-align: center;
     font-family: "Work Sans", sans-serif;
     font-size: 1.1em;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    border-top: 3px solid #D1675F;
 }
 
 .footer-content {
@@ -515,8 +416,8 @@ footer {
 }
 
 .footer-text {
-    font-size: 0.8em;
-    opacity: 0.8;
+    font-size: 0.7em;
+    color: #A5A58D;
 }
 
 .footer-icons {
@@ -526,8 +427,8 @@ footer {
 }
 
 .footer-icons a img {
-    width: 30px;  /* Ajuste o tamanho conforme necessário */
-    height: 30px; /* Ajuste o tamanho conforme necessário */
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
