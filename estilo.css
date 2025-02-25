@@ -1,61 +1,70 @@
-/* Importante fonte e alterando configurações padrões */
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Work+Sans:wght@300;600&display=swap');
-*{margin: 0; padding: 0; box-sizing: border-box;}
 
-html{
-	scroll-behavior: smooth;
-	scroll-padding-top: 70px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-	background-color: #F4E1C1;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    background-color: #F4E1C1;
 }
 
 /* Menu de navegação */
 nav {
     background-color: #8D6A5D;
     display: flex;
-    justify-content: center; /* Centraliza o menu */
+    justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
+    position: relative;
 }
 
-/* Container principal dos ícones e links */
-.container-menu {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-}
-
-/* Ícones do menu */
 .container-menu-icones {
     display: flex;
     gap: 20px;
 }
 
-/* Estilização dos ícones */
 #img-icones {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease-in-out, opacity 0.3s;
 }
 
-/* Efeito hover nos ícones */
 #img-icones:hover {
     transform: scale(1.1);
     opacity: 0.8;
 }
 
-/* Links do menu */
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.linha {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
 .container-menu-text {
     font-family: 'Work Sans', sans-serif;
     font-size: 1em;
     display: flex;
-    gap: 30px; /* Espaçamento entre os links */
+    gap: 30px; 
     margin-left: 500px;
 }
 
-/* Links */
 .menu {
     color: #FFFFFF;
     text-transform: uppercase;
@@ -63,13 +72,11 @@ nav {
     transition: color 0.3s ease-in-out, transform 0.2s;
 }
 
-/* Efeito hover nos links */
 .menu:hover {
     color: #FFDD94;
     transform: translateY(-2px);
 }
 
-/* Estilos para links ativos e visitados */
 .menu:visited {
     color: #FFFFFF;
 }
@@ -77,9 +84,58 @@ nav {
 .menu:active {
     color: #FFDD94;
 }
+
 a {
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: flex;
+        z-index: 20; 
+    }
+
+    .container-menu-text {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 85%;
+        height: 100vh;
+        background-color: #8D6A5D;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        text-align: left;
+        z-index: 10;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%); /* Esconde o menu fora da tela */
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .container-menu-text.active {
+        transform: translateX(0);
+    }
+
+    .menu {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    .menu-hamburguer.active .linha:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-hamburguer.active .linha:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-hamburguer.active .linha:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+
 
 /* Banner da página*/
 #img-header{
@@ -440,3 +496,5 @@ footer {
     justify-content: center;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
+/*Responsividade mobile*/

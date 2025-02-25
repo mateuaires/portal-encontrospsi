@@ -13,13 +13,21 @@
 
 	<body>
 
-		<!-- Menu de navegação-->
+		<!-- Menu de navegação -->
 		<nav>
 			<div class="container-menu-icones">
-				<a href="https://open.spotify.com/show/1VGE7nQKSgc5UjqahQ6HP8?si=3f22448e35ff43e9" target="_blank"><img id="img-icones" src="img/sptopo.png" class="media-object  img-responsive img-thumbnail">
+				<a href="https://open.spotify.com/show/1VGE7nQKSgc5UjqahQ6HP8?si=3f22448e35ff43e9" target="_blank">
+					<img id="img-icones" src="img/sptopo.png" class="media-object img-responsive img-thumbnail">
 				</a>
-				<a href="https://www.instagram.com/encontrospsicologia/" target="blank"><img id="img-icones" src="img/insta.png" class="media-object  img-responsive img-thumbnail">
+				<a href="https://www.instagram.com/encontrospsicologia/" target="_blank">
+					<img id="img-icones" src="img/insta.png" class="media-object img-responsive img-thumbnail">
 				</a>
+			</div>
+
+			<div class="menu-hamburguer" onclick="toggleMenu()">
+				<div class="linha"></div>
+				<div class="linha"></div>
+				<div class="linha"></div>
 			</div>
 
 			<div class="container-menu-text">
@@ -30,6 +38,15 @@
 				<a class="menu" href="#pag-depoimentos">DEPOIMENTOS</a>
 			</div>
 		</nav>
+
+		<script>
+			function toggleMenu() {
+				var menu = document.querySelector(".container-menu-text");
+				var hamburguer = document.querySelector(".menu-hamburguer");
+				menu.classList.toggle("active");
+				hamburguer.classList.toggle("active");
+			}
+		</script>
 		
 		<!-- Banner -->
 		<header>
