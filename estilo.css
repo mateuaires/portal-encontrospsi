@@ -60,7 +60,6 @@ nav {
     transition: transform 0.3s ease-in-out, opacity 0.3s;
 }
 
-/* Menu de links */
 .container-menu-text {
     font-family: 'Work Sans', sans-serif;
     font-size: 1em;
@@ -93,7 +92,6 @@ a {
     text-decoration: none;
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 1024px) {
     .container-menu-text {
         margin-left: auto;
@@ -105,7 +103,6 @@ a {
         display: flex;
     }
 
-    /* Menu lateral responsivo */
     .container-menu-text {
         position: fixed;
         top: 0;
@@ -114,13 +111,13 @@ a {
         height: 100vh;
         background-color: #8D6A5D;
         flex-direction: column;
-        align-items: flex-start; /* Alinha o texto à esquerda */
+        align-items: flex-start;
         justify-content: center;
         text-align: left;
         z-index: 20;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
-        padding-left: 20px; /* Adiciona margem à esquerda */
+        padding-left: 20px;
         border-radius: 20px;
     }
 
@@ -133,7 +130,7 @@ a {
         margin: 20px 0;
         padding: 10px 20px;
         width: auto;
-        text-align: left; /* Garante que o texto fique alinhado */
+        text-align: left; 
         border-radius: 10px;
         transition: background-color 0.3s;
     }
@@ -142,9 +139,6 @@ a {
         background-color: rgba(255, 221, 148, 0.2);
     }
 }
-
-
-
 
 /* Banner da página*/
 #img-header{
