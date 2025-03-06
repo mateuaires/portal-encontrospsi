@@ -1,4 +1,4 @@
-# <p align="center">Website da Clínica Encontros Psicologia</p>
+# <p align="center">Portal Encontros Psicologia</p>
 ![Logo da clínica](https://raw.githubusercontent.com/mateuaires/encontros-psicologia/main/img/banner.png)
 
 <div align="center">
