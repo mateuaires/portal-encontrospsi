@@ -1,4 +1,4 @@
-# <p align="center">Sistema de Triagem Encontros Psicologia</p>
+# <p align="center">Website da Clínica Encontros Psicologia</p>
 ![Logo da clínica](https://raw.githubusercontent.com/mateuaires/encontros-psicologia/main/img/banner.png)
 
 <div align="center">
@@ -17,27 +17,21 @@
 
 -----
 
-## :small_orange_diamond:Sobre o Projeto
-<div align="justify">Este projeto visa desenvolver um site para a clínica **Encontros Psicologia**, proporcionando um espaço online informativo e acessível ao público. O site servirá como um canal de comunicação entre a clínica e seus pacientes, apresentando informações relevantes sobre os serviços oferecidos, a equipe de profissionais e formas de contato.</div>
+## :small_orange_diamond:Sobre
+<div align="justify">Este projeto visa desenvolver um site para a clínica <b>Encontros Psicologia</b>, proporcionando um espaço online informativo e acessível ao público. O site servirá como um canal de comunicação entre a clínica e seus pacientes, apresentando informações relevantes sobre os serviços oferecidos, a equipe de profissionais e formas de contato.</div>
 
-## :small_orange_diamond: Tecnologias Utilizadas
+## :small_orange_diamond: Tecnologias
 Tecnologias utilizadas no projeto:
 * [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## :small_orange_diamond:Projeto
-#### Documentação
-A documentação está disponível no [Google Docs](https://docs.google.com/document/d/1nJHjfoPiTwUTOmsQj7v6Wyhj5uKC_Hik7XbtENvbba4/edit?usp=sharing).
-
 #### Layout
 O layout está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6nDRLevxV/Projeto-Final?type=design&node-id=0%3A1&mode=design&t=OuibXtjtGZmeSmlw-1).
 
 #### Hospedagem
 A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/triagem-encontrospsi/).
-
-#### Apresentação
-A apresentação está disponível no [Canva](https://www.canva.com/design/DAFwy9pj8vQ/zjveoQ4cudwYAwI2aPJFtw/edit?utm_content=DAFwy9pj8vQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
 ## :small_orange_diamond:Licença
 Este projeto está sob a [Licença MIT](https://github.com/mateuaires/encontros-psicologia/tree/main?tab=MIT-1-ov-file).
