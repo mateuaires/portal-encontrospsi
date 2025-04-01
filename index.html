@@ -129,34 +129,81 @@
 			</div>	
 		</main>
 
-		<!--Espaço-->
-		<section id="pag-espaco">
-			<div class="container-1">
-				<div id="titulo-esp">
-					<h1 class="titulo-esp">Nosso cantinho</h1>
-					<img id="linha" src="img/linha.svg">
-				</div>
+		<!-- Espaço -->
+<!-- Espaço -->
+<section id="pag-espaco">
+    <div class="container-1">
+        <div id="titulo-esp">
+            <h1 class="titulo-esp">Nosso cantinho</h1>
+            <img id="linha" src="img/linha.svg">
+        </div>
+
+        <!-- Grid para desktop -->
+        <div class="container-mural">
+            <div class="container">
+                <div class="grid-imagens">
+                    <img src="img/espaco1.jpg" alt="Espaço 1">
+                    <img src="img/espaco2.jpg" alt="Espaço 2">
+                    <img src="img/espaco3.jpg" alt="Espaço 3">
+                    <img src="img/espaco4.heic" alt="Espaço 4">
+                    <img src="img/espaco5.heic" alt="Espaço 5">
+                    <img src="img/espaco6.jpg" alt="Espaço 6">
+                </div>
+            </div>
+
+            <div class="texto-mural">
+                <p>A clínica de psicologia é um espaço projetado para oferecer um <b>ambiente seguro, acolhedor e confortável</b> para a prática clínica e o bem-estar emocional dos pacientes.</p>
+            </div>
+        </div>
+
+        <!-- Carrossel para mobile -->
+        <div class="carousel">
+            <button class="carousel-btn prev" onclick="mudarImagem(-1)">&#10094;</button>
+            <div class="carousel-container">
+                <img src="img/espaco1.jpg" alt="Espaço 1">
+                <img src="img/espaco2.jpg" alt="Espaço 2">
+                <img src="img/espaco3.jpg" alt="Espaço 3">
+                <img src="img/espaco4.heic" alt="Espaço 4">
+                <img src="img/espaco5.heic" alt="Espaço 5">
+                <img src="img/espaco6.jpg" alt="Espaço 6">
+            </div>
+            <button class="carousel-btn next" onclick="mudarImagem(1)">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+
+<script>
+let index = 0;
+
+function mudarImagem(direcao) {
+    const imagens = document.querySelectorAll(".carousel-container img");
+    const totalImagens = imagens.length;
+
+    // Atualiza o índice
+    index += direcao;
+
+    // Garantir que o índice esteja dentro dos limites
+    if (index < 0) {
+        index = totalImagens - 1; // Vai para a última imagem
+    }
+    if (index >= totalImagens) {
+        index = 0; // Vai para a primeira imagem
+    }
+
+    // Aplica a translação para mover o carrossel
+    document.querySelector(".carousel-container").style.transform = `translateX(${-index * 100}%)`; // Move uma imagem por vez
+}
+
+
+	</script>
 		
-				<div class="container-mural">
-					<div class="container">
-						<div class="grid-imagens">
-							<img src="img/espaco1.jpg" alt="Espaço 1">
-							<img src="img/espaco2.jpg" alt="Espaço 2">
-							<img src="img/espaco3.jpg" alt="Espaço 3">
-							<img src="img/espaco4.heic" alt="Espaço 4">
-							<img src="img/espaco5.heic" alt="Espaço 5">
-							<img src="img/espaco6.jpg" alt="Espaço 6">
-						</div>
-					</div>
-		
-					<div class="texto-mural">
-						<p>A clínica de psicologia é um espaço projetado para oferecer um <b>ambiente seguro, acolhedor e confortável</b> para a prática clínica e o bem-estar emocional dos pacientes.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		
+
+
+
+
+
+
 		<!-- Podcast -->
 		<section id="pag-podcast">
 			<div id="img-po">
