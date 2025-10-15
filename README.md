@@ -1,5 +1,5 @@
 # <p align="center">Portal Encontros Psicologia</p>
-![Logo da clínica](https://raw.githubusercontent.com/mateuaires/encontros-psicologia/main/img/banner.png)
+![Logo da clínica](https://raw.githubusercontent.com/mateuaires/encontros-psicologia/main/img/banner-github.png)
 
 <div align="center">
     <a href="#small_orange_diamondsobre">Sobre</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
