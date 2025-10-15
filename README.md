@@ -30,7 +30,7 @@ Tecnologias utilizadas no projeto:
 #### Layout
 O layout está disponível no [Figma](https://www.figma.com/proto/75BaMI2NRaf8o63iKqMkv6/Pr%C3%A1ticas-atualizado?node-id=1-2&starting-point-node-id=1%3A2).
 
-#### Documentação do projeto
+#### Documentação
 O documento do projeto está no [Microsoft Word](https://1drv.ms/w/c/86702c411de2a53d/EWMFIIfbaRRHln7h2lNvHUgB-ltDMr3AqQRytwT3Nk_cEQ?e=gEfuHV)
 
 #### Hospedagem
