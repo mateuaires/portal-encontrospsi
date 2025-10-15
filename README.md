@@ -28,7 +28,10 @@ Tecnologias utilizadas no projeto:
 
 ## :small_orange_diamond:Projeto
 #### Layout
-O layout está disponível no [Figma](https://www.figma.com/file/77Drc70nFFi3P6nDRLevxV/Projeto-Final?type=design&node-id=0%3A1&mode=design&t=OuibXtjtGZmeSmlw-1).
+O layout está disponível no [Figma](https://www.figma.com/proto/75BaMI2NRaf8o63iKqMkv6/Pr%C3%A1ticas-atualizado?node-id=1-2&starting-point-node-id=1%3A2).
+
+#### Documentação do projeto
+O documento do projeto está no [Microsoft Word](https://1drv.ms/w/c/86702c411de2a53d/EWMFIIfbaRRHln7h2lNvHUgB-ltDMr3AqQRytwT3Nk_cEQ?e=gEfuHV)
 
 #### Hospedagem
 A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/triagem-encontrospsi/).
@@ -37,10 +40,10 @@ A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/tr
 Este projeto está sob a [Licença MIT](https://github.com/mateuaires/encontros-psicologia/tree/main?tab=MIT-1-ov-file).
 
 ## :small_orange_diamond:Autores
-[Andersen Facundo](https://www.linkedin.com/in/andersen-f-1771ab96/)
-<br>
-<br>
-Felipe Augusto
-<br>
-<br>
 [Mateus Aires](https://www.linkedin.com/in/mateuaires/)
+<br>
+<br>
+[Pedro Medeiros](https://www.linkedin.com/in/pedro-medeiros-5765b6241/)
+<br>
+<br>
+[Virginia Prettz](https://www.linkedin.com/in/virginiaprettz/)
