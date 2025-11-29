@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="787" viewBox="0 0 1920 787">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFA14A" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background (transparent) -->
+  <rect x="0" y="0" width="1920" height="787" fill="none"/>
+
+  <!-- Cream soft wave base -->
+  <path d="M0,640
+           C240,600 420,560 660,580
+           C920,600 1140,700 1420,720
+           C1620,735 1800,710 1920,676
+           L1920,787 L0,787 Z"
+        fill="#FFF3EA" fill-opacity="0.6"/>
+
+  <!-- Big orange rounded shape (top-left) -->
+  <path d="M-60,60
+           C360,-40 780,120 820,280
+           C855,415 640,520 440,500
+           C200,475 -40,300 -60,60 Z"
+        fill="url(#fade)" />
+
+  <!-- Pink circle hint (top-right of the big orange) -->
+  <circle cx="840" cy="120" r="80" fill="#F7A7A6" fill-opacity="0.55"/>
+
+  <!-- Wavy stripes across the orange shape -->
+  <path d="M60,240 C300,180 540,160 820,190" fill="none" stroke="#FCD7BF" stroke-opacity="0.8" stroke-width="16" stroke-linecap="round"/>
+  <path d="M40,290 C300,230 560,220 820,250" fill="none" stroke="#FCD7BF" stroke-opacity="0.8" stroke-width="16" stroke-linecap="round"/>
+  <path d="M20,340 C300,285 560,280 820,310" fill="none" stroke="#FCD7BF" stroke-opacity="0.8" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- White highlight stroke -->
+  <path d="M180,370 C290,330 470,310 600,320" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Leaf-like line art (bottom-left) -->
+  <path d="M520,680
+           C540,630 590,590 640,580
+           M560,700
+           C590,640 680,600 740,598"
+        fill="none" stroke="#E36A2E" stroke-opacity="0.7" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Extra small orange accents (top-left) -->
+  <path d="M220,40 l40,80 M280,30 l38,75 M330,45 l34,70"
+        fill="none" stroke="#C94E1B" stroke-opacity="0.7" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Corner dark rounding (bottom-left) to mimic clipped corner -->
+  <path d="M0,640 C0,720 60,787 140,787 L0,787 Z"
+        fill="#161616" fill-opacity="0.2"/>
+</svg>
