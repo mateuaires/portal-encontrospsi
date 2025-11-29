@@ -612,47 +612,8 @@ iframe {
 
 /*Rodapé*/
 footer {
-    padding: 20px;
-    background-color: #33363D;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.1em;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-text {
-    font-size: 0.7em;
-    color: #A5A58D;
-}
-
-.footer-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.footer-icons a img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-
-.footer-icons a {
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: #00AC47;
+    height: 40px;
 }
 
 /*Responsividade mobile*/
