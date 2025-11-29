@@ -440,7 +440,8 @@ main{
 #contato p{
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
-    margin-right: 200px;
+    margin-right: 220px;
+    text-align: right;
 
 
 }
@@ -455,7 +456,6 @@ transition: transform 0.3s ease-in-out;
       display: flex;
   /* Outras propriedades, como alinhamento vertical */
   align-items: center; /* Alinha verticalmente ao centro */
-  
 }
 
 #lado-contato{
@@ -467,6 +467,8 @@ transition: transform 0.3s ease-in-out;
     color: #FFF;
     transition: transform 0.3s ease-in-out; /* animação aqui */
     cursor: pointer;
+        text-align: right;
+
 }
 
 #lado-contato:hover{
@@ -486,6 +488,36 @@ transition: transform 0.3s ease-in-out;
 }
 
 
+
+
+
+/*Podcast*/
+#pag-podcast {
+    margin: 50px auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+#icone-podcast{
+    width: 100px;
+	height: 100px;
+	padding: 20px;
+    border-radius: 23px;
+}
+
+
+#logo-podcast img{
+    border-radius: 100px;
+
+}
+
+
+
+
+
+
 /*Podcast*/
 #pag-podcast {
     margin: 50px auto;
@@ -495,7 +527,6 @@ transition: transform 0.3s ease-in-out;
     gap: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-	background: linear-gradient(#ffebcc, #E07A5F);
 }
 
 #img-spot {
