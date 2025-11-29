@@ -43,7 +43,7 @@ Este projeto está sob a [Licença MIT](https://github.com/mateuaires/encontros-
 [Mateus Aires](https://www.linkedin.com/in/mateuaires/)
 <br>
 <br>
-[Pedro Medeiros teste](https://www.linkedin.com/in/pedro-medeiros-5765b6241/)
+[Pedro Medeiros](https://www.linkedin.com/in/pedro-medeiros-5765b6241/)
 <br>
 <br>
 [Virginia Prettz](https://www.linkedin.com/in/virginiaprettz/)
