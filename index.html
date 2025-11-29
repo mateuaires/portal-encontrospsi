@@ -243,22 +243,119 @@ function mudarImagem(direcao) {
 
 
 
-		<!-- Podcast -->
-		<section id="pag-podcast">
-			<div id="img-po">
-				<img id="img-pod" src="img/podcast.png">
-			</div>  
+<section id="pag-podcast">
 
-			<div id="left-pagina">
-				<h1 id="h1-mod2"><b>Encontros Podcast</b> | Ouça o podcast!</h1>
-				<br>
-				<p id="texto-pod">Para acessar o serviço, você precisa de uma conta, mas não se preocupe: criar uma conta gratuita é simples e rápido.</p>
-				<br>
-				<p id="texto-pod">Se você se interessou, é só dar play no episódio abaixo e aproveitar!</p>
-				<br>
-				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3CHvb6qqTXP6rny6SRNnyU?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">				</iframe>
-			</div>
-		</section>
+  <!-- topo: título, linha e ícone -->
+  <div class="podcast-header">
+    <div class="podcast-header-left">
+      <h1>ENCONTROS CAST</h1>
+      <div class="podcast-divider"></div>
+    </div>
+
+    <img id="icone-podcast" src="img/logo-podcast.png" alt="Logo do podcast">
+  </div>
+
+  <!-- conteúdo principal -->
+  <div class="podcast-main">
+
+    <!-- COLUNA ESQUERDA -->
+    <div class="podcast-left">
+      <p class="podcast-left-text">Conheça o podcast do Encontros.</p>
+
+      <div class="podcast-card-wrapper">
+        <button class="arrow left-arrow" type="button">&#8592;</button>
+
+        <img id="left-img" src="img/podcast1.png" alt="Capa do podcast">
+
+        <button class="arrow right-arrow" type="button">&#8594;</button>
+      </div>
+
+      <a id="left-link" href="#" target="_blank">
+        <button class="btn-podcast">ACESSE O EPISÓDIO</button>
+      </a>
+    </div>
+
+    <!-- COLUNA DIREITA -->
+    <div class="podcast-right">
+
+      <p class="podcast-right-top">
+        É necessário de uma conta, mas não se preocupe: criar uma conta gratuita é simples e rápido.
+      </p>
+
+      <div class="podcast-right-content">
+        <img id="right-img" src="img/podcast-politico.jpg" alt="Capa do episódio Tudo é político">
+
+        <div class="podcast-right-text">
+          <h2> Tudo é político! </h2>
+
+          <p>
+            Acho que você já ouviu por aí alguém dizer que tudo é político, né? O que você entendeu sobre isso?
+            <br><br>
+            Gostaríamos muito que esse episódio atingisse além da nossa bolha e fosse parar nos ouvidos de quem
+            diz que odeia política. Então, bora compartilhar muito?
+            <br><br>
+            E se chegou em você, que odeia política, que tal nos dar uma chance e nos ouvir?
+          </p>
+        </div>
+      </div>
+
+      <div class="podcast-right-button">
+        <a href="#" target="_blank">
+          <button class="btn-podcast">OUÇA O PODCAST</button>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<script>
+  // lista de episódios do carrossel da esquerda
+  const leftEpisodes = [
+    {
+      img: "img/podcast1.png",
+      link: "https://link-episodio-1.com"
+    },
+    {
+      img: "img/podcast2.png",
+      link: "https://link-episodio-2.com"
+    },
+    {
+      img: "img/podcast3.png",
+      link: "https://link-episodio-3.com"
+    }
+  ];
+
+  let leftIndex = 0;
+
+  const leftImg  = document.getElementById("left-img");
+  const leftLink = document.getElementById("left-link");
+
+  function renderLeftEpisode() {
+    leftImg.src   = leftEpisodes[leftIndex].img;
+    leftLink.href = leftEpisodes[leftIndex].link;
+  }
+
+  // setas
+  document.querySelector(".left-arrow").addEventListener("click", () => {
+    leftIndex = (leftIndex - 1 + leftEpisodes.length) % leftEpisodes.length;
+    renderLeftEpisode();
+  });
+
+  document.querySelector(".right-arrow").addEventListener("click", () => {
+    leftIndex = (leftIndex + 1) % leftEpisodes.length;
+    renderLeftEpisode();
+  });
+
+  // inicia no primeiro
+  renderLeftEpisode();
+</script>
+
+
+
 
 		<!-- Depoimentos -->
 		<section id="pag-depoimentos">

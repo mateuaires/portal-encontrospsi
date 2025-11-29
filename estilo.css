@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #FFEFD4;
+    background-color: #FFF3D9;
 }
 
 /* Menu de navegação */
@@ -160,9 +160,10 @@ h1{
 p{
 	color: #000000;
 	text-align: justify;
-	font: 1em "Work Sans", sans-serif;
+	font: 1em "Montserrat", sans-serif;
 	line-height: 1.5em;
 	font-size: 1em;
+    
 }
 
 /* Descrição da clínica*/
@@ -486,63 +487,183 @@ transition: transform 0.3s ease-in-out;
 }
 
 
-/*Podcast*/
+/* SEÇÃO GERAL */
 #pag-podcast {
-    margin: 50px auto;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px 60px 60px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* TOPO: título + linha + ícone */
+.podcast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.podcast-header-left h1 {
+  color: #13A24A;            /* verde do título */
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+}
+
+.podcast-divider {
+  height: 3px;
+  width: 100%;
+  max-width: 900px;          /* linha não vai até o fim da tela */
+  background-color: #E0D3B8; /* tom de bege da linha */
+}
+
+#icone-podcast {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+/* GRID PRINCIPAL: esquerda | direita */
+.podcast-main {
+  display: grid;
+  grid-template-columns: 1.1fr 1.9fr;
+  gap: 60px;
+  margin-top: 10px;
+}
+
+/* COLUNA ESQUERDA */
+.podcast-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.podcast-left-text {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* card + setas */
+.podcast-card-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 24px;
+}
+
+.podcast-card-wrapper img {
+  width: 210px;
+  border-radius: 8px;
+}
+
+/* setas */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #BF6B1F;         /* laranja das setas */
+}
+
+.arrow:hover {
+  transform: scale(1.15);
+}
+
+/* BOTÃO VERDE */
+.btn-podcast {
+  border: none;
+  padding: 12px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #00A651;  /* verde principal */
+  color: #FFFFFF;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-podcast:hover {
+  background-color: #00863F;
+  transform: translateY(-1px);
+}
+
+/* COLUNA DIREITA */
+.podcast-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.podcast-right-top {
+  max-width: 430px;
+  line-height: 1.4;
+}
+
+/* imagem + texto lado a lado */
+.podcast-right-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 24px;
+  align-items: flex-start;
+}
+
+#right-img {
+  width: 260px;
+  border-radius: 8px;
+}
+
+.podcast-right-text h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+}
+
+.podcast-right-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* botão da direita alinhado ao centro da área */
+.podcast-right-button {
+  margin-top: 10px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  #pag-podcast {
+    padding: 30px 20px 40px;
+  }
+
+  .podcast-main {
+    grid-template-columns: 1fr;
     gap: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-	background: linear-gradient(#ffebcc, #E07A5F);
+  }
+
+  .podcast-right-content {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .podcast-header-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .podcast-divider {
+    max-width: 100%;
+  }
+
+  #right-img {
+    width: 220px;
+  }
 }
 
-#img-spot {
-    width: 75px;
-    height: 75px;
-    margin-right: 20px;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 
-#img-po{
-	text-align: right;
-	margin-right:40px;
-}
 
-#h1-mod2 {
-    font: 1.8em "Work Sans", sans-serif;
-    line-height: 1.6;
-    color: #333; /* Cor do título */
-	margin-top: 28px;
-    text-align: left; 
-}
 
-#texto-pod {
-    font-size: 1em;
-    line-height: 1.6em;
-    color: #333; /* Cor do texto */
-	width: 450px;
-}
 
-#img-pod {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-	text-align: right;
-}
 
-#img-pod:hover {
-    transform: scale(1.05);
-}
 
-iframe {
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(238, 234, 234, 0.644);
-}
+
+
 
 /*Depoimentos*/
 #pag-depoimentos {
