@@ -243,58 +243,133 @@ function mudarImagem(direcao) {
 
 
 
-<section id="pag-podcast"> <!-- título + ícone (linha de cima, centralizada) --> <div class="podcast-topo"> <h1>ENCONTROS CAST</h1> <img id="icone-podcast" src="img/logo-podcast.png" alt="logo podcast"> </div> <!-- duas colunas principais --> <div class="podcast-grid"> <!-- COLUNA ESQUERDA --> <div class="podcast-left"> <p>Conheça o podcast do Encontros.</p> <img id="podcast1" src="img/podcast1.png" alt="Capa do podcast 1"> <button class="btn-podcast"> ACESSE O EPISÓDIO </button> </div> <!-- COLUNA DIREITA --> <div class="podcast-right"> <p class="podcast-info"> É necessário de uma conta, mas não se preocupe: criar uma conta gratuita é simples e rápido. </p> <!-- imagem + texto lado a lado --> <div class="podcast-episodio"> <img id="img-pod" src="img/podcast-politico.jpg" alt="Capa do episódio Tudo é político"> <div class="podcast-texto"> <h2>Tudo é político!</h2> <p> Acho que você já ouviu por aí alguém dizer que tudo é político, né? O que você entendeu sobre isso?<br><br> Gostaríamos muito que esse episódio atingisse além da nossa bolha e fosse parar nos ouvidos de quem diz que odeia política. Então, bora compartilhar muito?<br><br> E se chegou em você, que odeia política, que tal nos dar uma chance e nos ouvir? </p> <button class="btn-podcast"> OUÇA O PODCAST </button> </div> </div> </div> </div> </section>
+<section id="pag-podcast">
+
+    <div class="podcast-topo">
+        <h1>ENCONTROS CAST</h1>
+        <img id="icone-podcast" src="img/logo-podcast.png" alt="logo podcast">
+    </div>
+
+    <!-- duas colunas principais -->
+    <div class="podcast-grid">
+
+        <!-- COLUNA ESQUERDA -->
+        <div class="podcast-left">
+
+            <p id="left-title">Conheça o podcast do Encontros.</p>
+
+            <div class="left-carousel">
+
+                <button class="left-prev arrow-btn">&#8592;</button>
+
+                <img id="left-img" src="img/podcast1.png" alt="Podcast 1">
+
+                <button class="left-next arrow-btn">&#8594;</button>
+
+            </div>
+
+            <a id="left-link" href="https://exemplo-episodio1.com" target="_blank">
+                <button class="btn-podcast">ACESSE O EPISÓDIO</button>
+            </a>
+
+        </div>
+
+        <!-- COLUNA DIREITA -->
+        <div class="podcast-right">
+
+            <p class="podcast-info">
+                É necessário de uma conta, mas não se preocupe: criar uma conta gratuita é simples e rápido.
+            </p>
+
+            <!-- imagem + texto lado a lado -->
+            <div class="podcast-episodio">
+
+                <img id="img-pod" src="img/podcast-politico.jpg" alt="Capa do episódio Tudo é político">
+
+                <div class="podcast-texto">
+
+                    <h2>TUDO É POLÍTICO!</h2>
+
+                    <p>
+                        Acho que você já ouviu por aí alguém dizer que tudo é político, né?
+                        O que você entendeu sobre isso?<br><br>
+
+                        Gostaríamos muito que esse episódio atingisse além da nossa bolha e fosse parar
+                        nos ouvidos de quem diz que odeia política. Então, bora compartilhar muito?<br><br>
+
+                        E se chegou em você, que odeia política, que tal nos dar uma chance e nos ouvir?
+                    </p>
+
+                    <button class="btn-podcast">OUÇA O PODCAST</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
 
 
 
 <script>
-  // lista de episódios do carrossel da esquerda
-  const leftEpisodes = [
-    {
-      img: "img/podcast1.png",
-      link: "https://link-episodio-1.com"
-    },
-    {
-      img: "img/podcast2.png",
-      link: "https://link-episodio-2.com"
-    },
-    {
-      img: "img/podcast3.png",
-      link: "https://link-episodio-3.com"
-    }
-  ];
-
-  let leftIndex = 0;
-
-  const leftImg  = document.getElementById("left-img");
-  const leftLink = document.getElementById("left-link");
-
-  function renderLeftEpisode() {
-    leftImg.src   = leftEpisodes[leftIndex].img;
-    leftLink.href = leftEpisodes[leftIndex].link;
+const leftPodcasts = [
+  {
+    title: "Conheça o podcast do Encontros",
+    img: "img/podcast1.png",
+    link: "https://exemplo-episodio1.com"
+  },
+  {
+    title: "Saúde Mental no Cotidiano",
+    img: "img/podcast2.png",
+    link: "https://exemplo-episodio2.com"
+  },
+  {
+    title: "Relacionamentos Saudáveis",
+    img: "img/podcast3.png",
+    link: "https://exemplo-episodio3.com"
   }
+];
 
-  // setas
-  document.querySelector(".left-arrow").addEventListener("click", () => {
-    leftIndex = (leftIndex - 1 + leftEpisodes.length) % leftEpisodes.length;
-    renderLeftEpisode();
-  });
+let leftIndex = 0;
 
-  document.querySelector(".right-arrow").addEventListener("click", () => {
-    leftIndex = (leftIndex + 1) % leftEpisodes.length;
-    renderLeftEpisode();
-  });
+function atualizarLeft() {
+  document.getElementById("left-title").textContent =
+    leftPodcasts[leftIndex].title;
 
-  // inicia no primeiro
-  renderLeftEpisode();
+  document.getElementById("left-img").src =
+    leftPodcasts[leftIndex].img;
+
+  document.getElementById("left-link").href =
+    leftPodcasts[leftIndex].link;
+}
+
+document.querySelector(".left-prev").addEventListener("click", () => {
+  leftIndex = (leftIndex - 1 + leftPodcasts.length) % leftPodcasts.length;
+  atualizarLeft();
+});
+
+document.querySelector(".left-next").addEventListener("click", () => {
+  leftIndex = (leftIndex + 1) % leftPodcasts.length;
+  atualizarLeft();
+});
+
+// inicia com o primeiro
+atualizarLeft();
 </script>
+
+
 
 
 
 
 		<!-- Depoimentos -->
 		<section id="pag-depoimentos">
-			<div id="h1-dep"><h1>DEPOIMENTOS</h1></div>
 			<script src="https://static.elfsight.com/platform/platform.js" async></script>
 			<div class="elfsight-app-a162394d-9aed-4d0d-8ff2-e06fa7858c37" data-elfsight-app-lazy></div>
 		  </section>

@@ -498,33 +498,130 @@ transition: transform 0.3s ease-in-out;
 .podcast-topo {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 12px;
+    align-items: center;           /* 🔹 alinha título e ícone na mesma altura */
+    padding-bottom: 12px;
     border-bottom: 2px solid #D9D9D9;
-
 }
 
 .podcast-topo h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
-    margin-top: 40px;
+    margin-top: 50px;                     /* 🔹 tira o empurrão pra baixo */
 }
 
 #icone-podcast {
     width: 80px;
     height: 80px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 0;                     /* 🔹 nada de margem desnecessária */
+    display: block;
 }
 
-/* grid com 2 colunas (igual Figma: esquerda menor, direita maior) */
-.podcast-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
+.podcast-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-top: 20px;
+}
 
-/* coluna esquerda */
-.podcast-left { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; } #podcast1 { max-width: 50%; border-radius: 10px; }
+.podcast-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+} 
 
-/* coluna direita */ .podcast-right { display: flex; flex-direction: column; gap: 20px; margin-left: 100px; margin-right: 80px; }
+#podcast1 {
+    border-radius: 10px;
+}
 
-.podcast-info { align-items: center; } /* imagem + texto lado a lado (AQUI FICA IGUAL AO FIGMA) */ .podcast-episodio { display: grid; /* poderia ser flex também */ grid-template-columns: auto 1fr; gap: 30px; align-items: flex-start; } #img-pod { width: 300px; /* ajusta conforme o Figma */ border-radius: 10px; } .podcast-texto h2 { margin-bottom: 10px; font-family: "Montserrat", sans-serif; } .podcast-texto p { line-height: 1.4; margin-bottom: 18px; } /* botões */ .btn-podcast { border: none; padding: 12px 24px; border-radius: 10px; font-family: "Montserrat", sans-serif; font-weight: 600; cursor: pointer; background-color: #00A86B; /* cor de exemplo */ color: #FFFFFF; } /* responsivo: empilha no mobile */ @media (max-width: 768px) { .podcast-grid { grid-template-columns: 1fr; } .podcast-episodio { grid-template-columns: 1fr; } .podcast-left { order: 2; } .podcast-right { order: 1; } }
+.podcast-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 80px;
+}
+
+.podcast-info {
+    align-items: center;
+}
+
+.podcast-episodio {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+#img-pod {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.podcast-texto h2 {
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.podcast-texto p {
+    line-height: 1.4;
+    margin-bottom: 18px;
+} 
+
+.btn-podcast {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #00A86B;
+    color: #FFFFFF;
+
+}
+
+.btn-podcast:hover{
+    background-color: #a42a26;
+}
+
+.left-carousel {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #BF6B1F; /* cor das setas */
+    transition: 0.3s;
+}
+
+.arrow-btn:hover {
+    transform: scale(1.2);
+    color: #8A4D18;
+}
+
+#left-img {
+    width: 230px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .podcast-grid { grid-template-columns: 1fr; }
+    
+    .podcast-episodio { grid-template-columns: 1fr; }
+    
+    .podcast-left { order: 2; }
+    
+    .podcast-right { order: 1; }
+
+}
 
 
 
