@@ -958,6 +958,10 @@ transition: transform 0.3s ease-in-out;
         gap: 25px;
     }
 
+    .endereco-texto {
+        max-height: 50px;
+    }
+
     .endereco-conteudo {
         flex-direction: column;
         gap: 20px;
@@ -986,6 +990,10 @@ transition: transform 0.3s ease-in-out;
         margin-bottom: 15px;
     }
 
+    .endereco-texto {
+        max-height: 50px;
+    }
+
     .rodape-sobre p,
     #menu-rodape a,
     .rodape-contato p,
@@ -1008,6 +1016,7 @@ transition: transform 0.3s ease-in-out;
         padding: 22px 18px;
         gap: 22px;
     }
+    
 
     .rodape-sobre h3,
     #menu-rodape h3,
@@ -1017,6 +1026,10 @@ transition: transform 0.3s ease-in-out;
         font-size: 1.15em;
         margin-bottom: 12px;
         letter-spacing: 0.5px;
+    }
+
+    .endereco-texto {
+        max-height: 50px;
     }
 
     .rodape-sobre p,
