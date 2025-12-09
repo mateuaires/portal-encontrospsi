@@ -623,14 +623,43 @@ transition: transform 0.3s ease-in-out;
 
 }
 
+/* Media Query para dispositivos móveis - Seção Equipe */
+@media screen and (max-width: 768px) {
+    #pag-equipe .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    
+    #pag-equipe .card {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+    
+    #pag-equipe h1 {
+        font-size: 28px;
+        padding: 20px 10px;
+    }
+}
 
-
-
-
-
-
-
-
+@media screen and (max-width: 480px) {
+    #pag-equipe .card {
+        width: 95%;
+    }
+    
+    #pag-equipe .card .text-card h3 {
+        font-size: 20px;
+    }
+    
+    #pag-equipe .card .text-card p {
+        font-size: 14px;
+    }
+    
+    #pag-equipe h1 {
+        font-size: 24px;
+    }
+}
 
 /*Depoimentos*/
 #pag-depoimentos {
