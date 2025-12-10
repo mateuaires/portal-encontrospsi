@@ -244,6 +244,7 @@ function mudarImagem(direcao) {
 
 
 <section id="pag-podcast">
+<<<<<<< Updated upstream
 
     <div class="podcast-topo">
         <h1>ENCONTROS CAST</h1>
@@ -309,7 +310,139 @@ function mudarImagem(direcao) {
         </div>
 
     </div>
+=======
+  <!-- título + ícone (linha de cima, centralizada) -->
+  <div class="podcast-topo">
+    <h1>ENCONTROS CAST</h1>
+    <img id="icone-podcast" src="img/logo-podcast.png" alt="logo podcast">
+  </div>
+>>>>>>> Stashed changes
 
+  <!-- duas colunas principais -->
+  <div class="podcast-grid">
+    
+    <!-- COLUNA ESQUERDA (agora carrossel) -->
+<div class="podcast-left">
+
+  <p id="left-title">Conheça o podcast do Encontros.</p>
+
+  <div class="left-carousel">
+
+    <button class="left-prev">&#10094;</button>
+
+    <div class="left-slide">
+      <img id="left-img" src="img/podcast1.png" alt="Podcast 1">
+    </div>
+
+    <button class="left-next">&#10095;</button>
+
+  </div>
+
+  <a id="left-link" href="#" target="_blank">
+    <button class="btn-podcast">
+      ACESSE O EPISÓDIO
+    </button>
+  </a>
+
+</div>
+
+
+<script>
+const leftPodcasts = [
+  {
+    title: "Conheça o podcast do Encontros",
+    img: "img/podcast1.png",
+    link: "https://episodio1.com"
+  },
+  {
+    title: "Saúde Mental no Cotidiano",
+    img: "img/podcast2.png",
+    link: "https://episodio2.com"
+  },
+  {
+    title: "Relacionamentos Saudáveis",
+    img: "img/podcast3.png",
+    link: "https://episodio3.com"
+  }
+];
+
+let leftIndex = 0;
+
+function atualizarLeft(direcao) {
+  const img = document.getElementById("left-img");
+  const title = document.getElementById("left-title");
+  const link = document.getElementById("left-link");
+
+  // 1) coloca a imagem FORA da tela, sem animação (direita ou esquerda)
+  img.style.transition = "none";
+  if (direcao === "next") {
+    img.style.transform = "translateX(100%)";   // entra da direita
+  } else {
+    img.style.transform = "translateX(-100%)";  // entra da esquerda
+  }
+
+  // atualiza conteúdo enquanto está fora da área visível
+  title.textContent = leftPodcasts[leftIndex].title;
+  img.src = leftPodcasts[leftIndex].img;
+  link.href = leftPodcasts[leftIndex].link;
+
+  // força o navegador a “recalcular” o layout
+  void img.offsetWidth;
+
+  // 2) agora liga a animação e manda a imagem pro centro
+  img.style.transition = "transform 0.4s ease-in-out";
+  img.style.transform = "translateX(0)";
+}
+
+// eventos das setas
+document.querySelector(".left-next").addEventListener("click", () => {
+  leftIndex = (leftIndex + 1) % leftPodcasts.length;
+  atualizarLeft("next");
+});
+
+document.querySelector(".left-prev").addEventListener("click", () => {
+  leftIndex = (leftIndex - 1 + leftPodcasts.length) % leftPodcasts.length;
+  atualizarLeft("prev");
+});
+
+// garante que o primeiro episódio esteja certo ao carregar
+atualizarLeft("next");
+</script>
+
+
+
+
+    <!-- COLUNA DIREITA -->
+    <div class="podcast-right">
+      <p class="podcast-info">
+        É necessário de uma conta, mas não se preocupe: criar uma conta gratuita é simples e rápido.
+      </p>
+
+      <!-- imagem + texto lado a lado -->
+      <div class="podcast-episodio">
+        <img id="img-pod" src="img/podcast-politico.jpg" alt="Capa do episódio Tudo é político">
+
+        <div class="podcast-texto">
+          <h2>TUDO É POLÍTICO!</h2>
+
+          <p>
+            Acho que você já ouviu por aí alguém dizer que tudo é político, né? 
+            O que você entendeu sobre isso?<br><br>
+
+            Gostaríamos muito que esse episódio atingisse além da nossa bolha e fosse parar
+            nos ouvidos de quem diz que odeia política. Então, bora compartilhar muito?<br><br>
+
+            E se chegou em você, que odeia política, que tal nos dar uma chance e nos ouvir?
+          </p>
+
+          <button class="btn-podcast">
+            OUÇA O PODCAST
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 
@@ -367,6 +500,10 @@ atualizarLeft();
 
 
 
+<<<<<<< Updated upstream
+=======
+		
+>>>>>>> Stashed changes
 
 		<!-- Depoimentos -->
 		<section id="pag-depoimentos">

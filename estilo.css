@@ -497,6 +497,7 @@ transition: transform 0.3s ease-in-out;
 /* topo: título + ícone */
 .podcast-topo {
     display: flex;
+<<<<<<< Updated upstream
     justify-content: space-between;
     align-items: center;           /* 🔹 alinha título e ícone na mesma altura */
     padding-bottom: 12px;
@@ -509,14 +510,37 @@ transition: transform 0.3s ease-in-out;
     margin-top: 50px;                     /* 🔹 tira o empurrão pra baixo */
 }
 
+=======
+    justify-content: space-between; /* título à esquerda, ícone à direita */
+    margin-bottom: 12px;
+    border-bottom: 2px solid #D9D9D9; /* linha */
+
+
+}
+
+.podcast-topo h1 {
+  font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    margin-top: 40px;
+}
+
+/* ícone */
+>>>>>>> Stashed changes
 #icone-podcast {
     width: 80px;
     height: 80px;
     border-radius: 10px;
+<<<<<<< Updated upstream
     margin: 0;                     /* 🔹 nada de margem desnecessária */
     display: block;
 }
 
+=======
+    margin-bottom: 10px;
+}
+
+/* grid com 2 colunas (igual Figma: esquerda menor, direita maior) */
+>>>>>>> Stashed changes
 .podcast-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -524,6 +548,7 @@ transition: transform 0.3s ease-in-out;
     margin-top: 20px;
 }
 
+<<<<<<< Updated upstream
 .podcast-left {
     display: flex;
     flex-direction: column;
@@ -550,13 +575,95 @@ transition: transform 0.3s ease-in-out;
 
 .podcast-episodio {
     display: grid;
+=======
+/* CARROSSEL lado esquerdo */
+.left-carousel {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.left-slide {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;   /* 🔹 esconde o que estiver fora da área */
+}
+
+.left-prev,
+.left-next {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 8px;
+    color: #444;
+}
+
+.left-prev:hover,
+.left-next:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+#left-img {
+     width: 70%;              /* ou o valor que você já usa */
+    border-radius: 10px;
+    transform: translateX(0);               /* começa no centro */
+    transition: transform 0.4s ease-in-out; /* anima o movimento */
+}
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
+}
+
+/* coluna esquerda */
+.podcast-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+#podcast1 {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+/* coluna direita */
+.podcast-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 80px;
+
+}
+
+.podcast-info {
+    align-items: center;
+
+}
+
+/* imagem + texto lado a lado (AQUI FICA IGUAL AO FIGMA) */
+.podcast-episodio {
+    display: grid;              /* poderia ser flex também */
+>>>>>>> Stashed changes
     grid-template-columns: auto 1fr;
     gap: 30px;
     align-items: flex-start;
 }
 
 #img-pod {
+<<<<<<< Updated upstream
     width: 300px;
+=======
+    width: 300px;               /* ajusta conforme o Figma */
+>>>>>>> Stashed changes
     border-radius: 10px;
 }
 
@@ -568,6 +675,7 @@ transition: transform 0.3s ease-in-out;
 .podcast-texto p {
     line-height: 1.4;
     margin-bottom: 18px;
+<<<<<<< Updated upstream
 } 
 
 .btn-podcast {
@@ -659,7 +767,52 @@ transition: transform 0.3s ease-in-out;
     #pag-equipe h1 {
         font-size: 24px;
     }
+=======
+>>>>>>> Stashed changes
 }
+
+/* botões */
+.btn-podcast {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #00A86B;  /* cor de exemplo */
+    color: #FFFFFF;
+}
+
+.btn-podcast:hover {
+    background-color: #a42a26; /* cor nova no hover */
+}
+
+
+/* responsivo: empilha no mobile */
+@media (max-width: 768px) {
+    .podcast-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .podcast-episodio {
+        grid-template-columns: 1fr;
+    }
+
+    .podcast-left {
+        order: 2;
+    }
+
+    .podcast-right {
+        order: 1;
+    }
+}
+
+
+
+
+
+
+
 
 /*Depoimentos*/
 #pag-depoimentos {
