@@ -306,18 +306,22 @@ p{
 /* Botão topo*/
 #topo{
     position: fixed;
-    right: 30px;
+    right: 20px;
     bottom: 32px;   /* base da coluna */
+        z-index: 9999; /* sempre por cima */
+
 }
 
 #bt-topo{
     width: 60px;
     height: 60px;
+        pointer-events: auto; /* garante clicável */
+
 }
 
 @media (max-width: 768px) {
     .whatsapp-float {
-        bottom: 120px;
+        bottom: 100px;
         right: 24px;
     }
 
