@@ -141,6 +141,8 @@ a {
     }
 }
 
+
+
 /* Banner da página*/
 #img-header{
 	width: 100%;
@@ -165,6 +167,45 @@ p{
 	font-size: 1em;
     
 }
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 110px;
+    right: 22px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 9999;
+    animation: bounce 2s infinite ease-in-out;
+    transition: transform 0.2s;
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+}
+
+/* efeito ao passar o mouse */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* animação "pulo suave" */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
 
 /* Descrição da clínica*/
 .descricao h1 {
@@ -264,15 +305,28 @@ p{
 
 /* Botão topo*/
 #topo{
-	position: fixed;
-	right: 30px;
-	bottom: 32px;
+    position: fixed;
+    right: 30px;
+    bottom: 32px;   /* base da coluna */
 }
 
 #bt-topo{
-	width: 60px;
-	height: 60px;
+    width: 60px;
+    height: 60px;
 }
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 120px;
+        right: 24px;
+    }
+
+    #topo {
+        right: 24px;
+        bottom: 24px;
+    }
+}
+
 
 /*Equipe*/
 main{
@@ -323,8 +377,7 @@ main{
 
 /* Espaço */
 #pag-espaco {
-    text-align: center;
-    padding: 40px;
+        padding: 24px 12px;      /* antes 40px em tudo */
 }
 
 .container-mural {
@@ -359,27 +412,31 @@ main{
 
 
 /* Carrossel para mobile */
+/* ===== CARROSSEL MOBILE ===== */
+
 .carousel {
-    display: none;  /* O carrossel começa escondido */
-    overflow: hidden;
-    max-width: 100%;
+    display: none;                 /* começa escondido (só mostra no @media) */
     position: relative;
-    text-align: center;
-    z-index: 1;  /* Garantir que o carrossel apareça acima de outros elementos */
+    max-width: 340px;              /* largura máxima do carrossel */
+    margin: 0 auto 2rem;           /* centraliza e dá espaço embaixo */
+    overflow: hidden;              /* esconde o que passar da borda */
+    border-radius: 16px;           /* bordas arredondadas na “caixa” toda */
 }
 
+/* trilho interno com todos os slides */
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%; /* Ajustando a largura para 100% da tela */
 }
 
+/* cada imagem é um slide ocupando 100% da largura */
 .carousel img {
+    flex: 0 0 100%;                /* 1 imagem por vez */
     width: 100%;
-    height: 250px;
-    border-radius: 15px;
+    height: 230px;
+    border-radius: 16px;
     object-fit: cover;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
 /* Botões do carrossel */
@@ -387,33 +444,67 @@ main{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
     border: none;
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    z-index: 2; /* Garantir que os botões fiquem sobre as imagens */
+    z-index: 2;
+    transition: background 0.2s ease, transform 0.1s ease;
 }
 
 .carousel-btn.prev {
-    left: 10px;
+    left: 8px;
 }
 
 .carousel-btn.next {
-    right: 10px;
+    right: 8px;
 }
 
-/* Esconder grid no mobile e mostrar carrossel */
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.75);
+    transform: translateY(-50%) scale(1.05);
+}
+
+/* Pontinhos de navegação (se quiser usar) */
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.carousel-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-dot.active {
+    background: #ffffff;
+}
+
+/* ===== MOBILE: esconde grid e mostra carrossel ===== */
+
 @media screen and (max-width: 768px) {
     .grid-imagens {
-        display: none;  /* Esconde a grid de imagens */
+        display: none;     /* Esconde a grid de imagens */
     }
 
     .carousel {
-        display: block;  /* Exibe o carrossel */
-        width: 100%;     /* Garante que o carrossel ocupe toda a largura da tela */
+        display: block;    /* Mostra o carrossel */
+        width: 100%;
     }
 }
+
 
 /*Contato*/
 #contato{
@@ -442,6 +533,7 @@ main{
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
     margin-right: 200px;
+        text-shadow: 2px 2px 4px #000;
 
 
 }
@@ -486,10 +578,44 @@ transition: transform 0.3s ease-in-out;
     transform: scale(1.05); /* ícone + texto crescem juntos */
 }
 
+@media screen and (max-width: 768px) {
+
+    #contato {
+        padding: 24px 16px;          /* menos padding e com lateral */
+        justify-content: center;     /* não empurra só pra direita */
+        align-items: flex-start;
+        background-position: center;
+    }
+
+    #contato-direita {
+        max-width: 100%;             /* usa a largura toda da tela */
+        text-align: left;            /* texto alinhado à esquerda */
+    }
+
+    #contato p {
+        margin-right: 0;             /* remove aquele 200px que estourava */
+        font-size: 0.95rem;
+        text-shadow: 2px 2px 4px #000;
+    }
+
+    #titulo-contato {
+        text-align: left;
+        font-size: 1.4rem;
+    }
+
+    #lado-contato {
+        justify-content: flex-start; /* ícone + texto começam à esquerda */
+    }
+
+    #icone-contato {
+        margin-left: 0;
+    }
+}
+
 
 /*Podcast*/
 #pag-podcast {
-    margin: 20px;
+    margin: 0;
     padding: 40px 60px;
     border-radius: 24px;
 }
@@ -610,18 +736,113 @@ transition: transform 0.3s ease-in-out;
 #left-img {
     width: 230px;
     border-radius: 10px;
+    transition: transform 1000s ease-out;
+    display: ;
 }
 
+.slide-out-left {
+    transform: translateX(-120%);
+}
+
+.slide-in-right {
+    transform: translateX(120%);
+}
+
+.slide-in-right-active {
+    transform: translateX(0);
+}
+
+
+
+
+
+/* AJUSTES DO PODCAST PARA MOBILE */
 @media (max-width: 768px) {
-    .podcast-grid { grid-template-columns: 1fr; }
-    
-    .podcast-episodio { grid-template-columns: 1fr; }
-    
-    .podcast-left { order: 2; }
-    
-    .podcast-right { order: 1; }
 
+    /* Seção mais limpa e sem sobras laterais */
+    #pag-podcast {
+        margin: 0;
+        padding: 24px 16px;
+        border-radius: 0;
+    }
+
+    /* Título principal do podcast */
+    .podcast-topo {
+        justify-content: flex-start;
+    }
+
+    .podcast-topo h1 {
+        margin-top: 24px;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    /* Grid vira 1 coluna */
+    .podcast-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 16px;
+    }
+
+    /* Remove margens da direita/esquerda */
+    .podcast-right,
+    .podcast-left {
+        margin: 0;
+    }
+
+    /* Texto inicial da direita */
+    .podcast-info {
+        text-align: center;
+    }
+
+    /* Episódio reorganizado (imagem em cima e texto embaixo) */
+    .podcast-episodio {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Imagem centralizada */
+    #img-pod {
+        width: 100%;
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    /* Centraliza título do episódio */
+    .podcast-texto h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    /* Centraliza o texto */
+    .podcast-texto p {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* Centraliza botão */
+    .podcast-texto .btn-podcast {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Ajustes do carrossel da coluna esquerda */
+    .left-carousel {
+        gap: 12px;
+    }
+
+    #left-img {
+        width: 220px;
+    }
 }
+
+
 
 
 
@@ -1109,4 +1330,62 @@ transition: transform 0.3s ease-in-out;
 footer {
     background-color: #00AC47;
     height: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #pag-espaco {
+        padding: 24px 12px;      /* antes 40px em tudo */
+    }
+
+    #pag-podcast {
+        margin: 0;
+        padding: 24px 12px;      /* em vez de 40px 60px */
+    }
+
+    main {
+        padding: 20px 12px;      /* se quiser reduzir aqui também */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;   /* impede aquele “empurrão” lateral */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* nav mais justinha no mobile */
+    nav {
+        padding: 12px 16px;
+    }
+
+    /* descrição encostando melhor nas bordas */
+    .descricao {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 24px 16px;
+    }
+
+    /* seção da equipe ocupando melhor a tela */
+    main {
+        padding: 24px 12px;
+    }
+
+
+
+
+    .carousel img {
+        border-radius: 0;
+    }
+
+    /* podcast mais colado nas bordas, como o resto */
+    #pag-podcast {
+        margin: 0;
+        padding: 24px 12px;
+    }
 }

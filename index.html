@@ -72,6 +72,14 @@
 			<a href="#"> <img id="bt-topo" src="img/topo.png"> </a>
 		</div>
 
+		<!--whatsapp-->
+		<a href="https://api.whatsapp.com/send?phone=5561992954182"
+   class="whatsapp-float"
+   target="_blank">
+    <img src="img/whatsapp.png" alt="WhatsApp">
+</a>
+
+
 		<!-- Equipe -->
 		<main id="pag-equipe">
 			<h1>Nossa equipe</h1>
@@ -94,36 +102,6 @@
 					<div class="text-card">
 						<h3>Wana Lays</h3>
 						<p>Psicóloga clínica e social. Atendo adolescentes e adultos, a partir da perspectiva sistêmica e para além disso, muito do que norteia o meu fazer profissional hoje é acreditar numa ética afetuosa de enxergar as múltiplas formas de existência.</p>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="imagem">
-						<img class="img-card" src="img/aline.jpg">
-					</div>
-					<div class="text-card">
-						<h3>Aline Ribeiro</h3>
-						<p>Atuo na área da Psicologia Clínica, tendo como público alvo adolescentes, adultos e idosos. A abordagem a qual uso como base é a humanista fenomenológica existencial.</p>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="imagem">
-						<img class="img-card" src="img/guilherme.jpg">
-					</div>
-					<div class="text-card">
-						<h3>Guilherme Aloar</h3>
-						<p>Sou psicólogo infanto-juvenil para crianças e adolescentes. Além da clínica trabalho como psicólogo escolar em um cursinho popular do DF. Realizo meus trabalhos ancorado na perspectiva histórico-cultural.</p>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="imagem">
-						<img class="img-card" src="img/laiane.jpg">
-					</div>
-					<div class="text-card">
-						<h3>Laiane Ramos</h3>
-						<p>Atuo nas áreas da psicologia social e clínica através da abordagem centrada na pessoa - ACP. Atendo adolescentes a partir dos 12 anos de idade e adultos.</p>
 					</div>
 				</div>
 			</div>	
@@ -153,44 +131,75 @@
 
         <!-- Carrossel para mobile -->
         <div class="carousel">
-            <button class="carousel-btn prev" onclick="mudarImagem(-1)">&#10094;</button>
-            <div class="carousel-container">
-                <img src="img/espaco1.jpg" alt="Espaço 1">
-                <img src="img/espaco2.jpg" alt="Espaço 2">
-                <img src="img/espaco3.jpg" alt="Espaço 3">
-                <img src="img/espaco4.heic" alt="Espaço 4">
-                <img src="img/espaco5.heic" alt="Espaço 5">
-                <img src="img/espaco6.jpg" alt="Espaço 6">
-            </div>
-            <button class="carousel-btn next" onclick="mudarImagem(1)">&#10095;</button>
-        </div>
+  <div class="carousel-container">
+    <img src="img/espaco1.JPG" alt="Foto 1">
+    <img src="img/espaco2.JPG" alt="Foto 2">
+    <img src="img/espaco3.JPG" alt="Foto 3">
+	    <img src="img/espaco4.HEIC" alt="Foto 3">
+    <img src="img/espaco5.HEIC" alt="Foto 3">
+    <img src="img/espaco6.JPG" alt="Foto 3">
+
+  </div>
+
+  <button class="carousel-btn prev">&#10094;</button>
+  <button class="carousel-btn next">&#10095;</button>
+</div>
+
+
     </div>
 </section>
 
 
 <script>
-let index = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".carousel");
+  if (!carousel) return;
 
-function mudarImagem(direcao) {
-    const imagens = document.querySelectorAll(".carousel-container img");
-    const totalImagens = imagens.length;
+  const container = carousel.querySelector(".carousel-container");
+  const slides = carousel.querySelectorAll(".carousel-container img");
+  const prevBtn = carousel.querySelector(".carousel-btn.prev");
+  const nextBtn = carousel.querySelector(".carousel-btn.next");
 
-    // Atualiza o índice
-    index += direcao;
+  let index = 0;
+  const total = slides.length;
 
-    // Garantir que o índice esteja dentro dos limites
-    if (index < 0) {
-        index = totalImagens - 1; // Vai para a última imagem
-    }
-    if (index >= totalImagens) {
-        index = 0; // Vai para a primeira imagem
-    }
+  // garante que cada slide ocupe 100% da largura
+  slides.forEach(slide => {
+    slide.style.flex = "0 0 100%";
+  });
 
-    // Aplica a translação para mover o carrossel
-    document.querySelector(".carousel-container").style.transform = `translateX(${-index * 100}%)`; // Move uma imagem por vez
-}
+  function atualizarPosicao() {
+    const offset = -index * 100; // 0, -100, -200...
+    container.style.transform = `translateX(${offset}%)`;
+  }
 
-	</script>
+  function irParaSlide(novoIndex) {
+    index = (novoIndex + total) % total; // faz o loop (vai do último pro primeiro)
+    atualizarPosicao();
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      irParaSlide(index - 1);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      irParaSlide(index + 1);
+    });
+  }
+
+  // opcional: troca automática a cada 5s
+  // setInterval(() => {
+  //   irParaSlide(index + 1);
+  // }, 5000);
+
+  // começa no primeiro
+  atualizarPosicao();
+});
+</script>
+
 
 
 		<!-- Contato -->
@@ -247,7 +256,6 @@ function mudarImagem(direcao) {
 
     <div class="podcast-topo">
         <h1>ENCONTROS CAST</h1>
-        <img id="icone-podcast" src="img/logo-podcast.png" alt="logo podcast">
     </div>
 
     <!-- duas colunas principais -->
@@ -338,6 +346,7 @@ const leftPodcasts = [
 
 let leftIndex = 0;
 
+// Atualiza os elementos do carrossel
 function atualizarLeft() {
   document.getElementById("left-title").textContent =
     leftPodcasts[leftIndex].title;
@@ -349,19 +358,47 @@ function atualizarLeft() {
     leftPodcasts[leftIndex].link;
 }
 
+// Animação suave de troca (fade)
+function trocarComFade(novoIndex) {
+  const img = document.getElementById("left-img");
+
+  img.classList.add("fade-out"); // começa o fade-out
+
+  setTimeout(() => {
+    leftIndex = novoIndex;
+    atualizarLeft();
+
+    img.classList.remove("fade-out");
+    img.classList.add("fade-in"); // fade-in da nova imagem
+
+    setTimeout(() => img.classList.remove("fade-in"), 500);
+  }, 500);
+}
+
+// Botão voltar
 document.querySelector(".left-prev").addEventListener("click", () => {
-  leftIndex = (leftIndex - 1 + leftPodcasts.length) % leftPodcasts.length;
-  atualizarLeft();
+  const novoIndex = (leftIndex - 1 + leftPodcasts.length) % leftPodcasts.length;
+  trocarComFade(novoIndex);
 });
 
+// Botão avançar
 document.querySelector(".left-next").addEventListener("click", () => {
-  leftIndex = (leftIndex + 1) % leftPodcasts.length;
-  atualizarLeft();
+  const novoIndex = (leftIndex + 1) % leftPodcasts.length;
+  trocarComFade(novoIndex);
 });
 
-// inicia com o primeiro
+// Troca automática a cada 4 segundos
+setInterval(() => {
+  const novoIndex = (leftIndex + 1) % leftPodcasts.length;
+  trocarComFade(novoIndex);
+}, 4000);
+
+// Inicia com o primeiro
 atualizarLeft();
 </script>
+
+
+
 
 
 
