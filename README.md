@@ -34,7 +34,7 @@ O layout está disponível no [Figma](https://www.figma.com/proto/75BaMI2NRaf8o6
 O documento do projeto está no [Microsoft Word](https://1drv.ms/w/c/86702c411de2a53d/EWMFIIfbaRRHln7h2lNvHUgB-ltDMr3AqQRytwT3Nk_cEQ?e=gEfuHV)
 
 #### Hospedagem
-A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/triagem-encontrospsi/).
+A hospedagem está disponível no [GitHub Pages](https://mateuaires.github.io/portal-encontrospsi/).
 
 ## :small_orange_diamond:Licença
 Este projeto está sob a [Licença MIT](https://github.com/mateuaires/encontros-psicologia/tree/main?tab=MIT-1-ov-file).
