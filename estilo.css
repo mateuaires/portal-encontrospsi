@@ -259,13 +259,13 @@ body {
     .menu-hamburguer {
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 10px;
         position: relative;   /* 🔥 remove conflitos do absolute */
         top: 0;               /* 🔥 deixa na mesma linha dos ícones */
     }
 
     .menu-hamburguer span {
-        width: 22px;
+        width: 25px;
         height: 2px;
         background: #fff;
         border-radius: 4px;
@@ -273,7 +273,6 @@ body {
 
     .menu-hamburguer {
         display: flex;
-        
         position: absolute;
         right: 20px;
     }
@@ -380,7 +379,7 @@ body {
 
     .hero-graphics-wrapper {
         position: relative !important;
-        flex: 0 0 48%;
+        flex: 48%;
         height: auto;
         top: auto;
         right: auto;
