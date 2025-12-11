@@ -68,20 +68,18 @@
 				const btnMenu = document.querySelector('.menu-hamburguer');
 				const heroNav = document.querySelector('.hero-nav');
 
-				if (btnMenu && heroNav) {
-					btnMenu.addEventListener('click', () => {
-						heroNav.classList.toggle('active');
-						const expanded = btnMenu.getAttribute('aria-expanded') === 'true';
-						btnMenu.setAttribute('aria-expanded', !expanded);
-					});
+				btnMenu.addEventListener('click', () => {
+					heroNav.classList.toggle('active');
+					btnMenu.classList.toggle('active'); // 🔥 faz virar X
+				});
 
-					heroNav.querySelectorAll('a').forEach(link => {
-						link.addEventListener('click', () => {
-							heroNav.classList.remove('active');
-							btnMenu.setAttribute('aria-expanded', 'false');
-						});
+				// Quando clicar em um link → fecha o menu e volta ao hambúrguer
+				heroNav.querySelectorAll('a').forEach(link => {
+					link.addEventListener('click', () => {
+						heroNav.classList.remove('active');
+						btnMenu.classList.remove('active'); // 🔥 volta para hambúrguer
 					});
-				}
+				});
 			</script>
 		</section>
 		
