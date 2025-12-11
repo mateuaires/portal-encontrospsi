@@ -9,63 +9,91 @@
 		<meta name="description" content="Serviço de psicoterapia online para todo o Brasil e presencial em São Sebastião - DF. Nossos atendimentos prestados são destinados a pessoas de todas as faixas etárias.">
 		<link rel="stylesheet" href="estilo.css"/>
 		<link rel="shortcut icon" type="imagex/png" href="img/icone-aba.ico">
+	
+	
 	</head>
 
 	<body>
 
-		<!-- Menu de navegação -->
-		<nav>
-			<div class="container-menu-icones">
-				<a href="https://open.spotify.com/show/1VGE7nQKSgc5UjqahQ6HP8?si=3f22448e35ff43e9" target="_blank">
-					<img id="img-icones" src="img/sptopo.png" class="media-object img-responsive img-thumbnail">
-				</a>
-				<a href="https://www.instagram.com/encontrospsicologia/" target="_blank">
-					<img id="img-icones" src="img/insta.png" class="media-object img-responsive img-thumbnail">
-				</a>
-			</div>
+		<section class="hero-section">
+    <div class="container-hero">
 
-			<div class="menu-hamburguer" onclick="toggleMenu()">
-				<div class="linha"></div>
-				<div class="linha"></div>
-				<div class="linha"></div>
-			</div>
+        <header class="hero-header">
+            <div class="social-icons">
+  <a href="https://www.instagram.com/encontrospsicologia/" target="_blank">
+    <img src="img/insta.png" alt="Instagram">
+  </a>
+  <a href="https://open.spotify.com/show/..." target="_blank">
+    <img src="img/sptopo.png" alt="Spotify">
+  </a>
+</div>
 
-			<div class="container-menu-text">
-				<a class="menu" href="">INÍCIO</a>
-				<a class="menu" href="#pag-equipe">EQUIPE</a>
-				<a class="menu" href="#pag-espaco">ESPAÇO</a>
-				<a class="menu" href="#pag-podcast">PODCAST</a>
-				<a class="menu" href="#pag-depoimentos">DEPOIMENTOS</a>
-			</div>
-		</nav>
 
-		<script>
-			function toggleMenu() {
-    			var menu = document.querySelector(".container-menu-text");
-    			var hamburguer = document.querySelector(".menu-hamburguer");
-    			menu.classList.toggle("active");
-    			hamburguer.classList.toggle("active");
-				}
-		</script>
+            <!-- BOTÃO HAMBÚRGUER – só aparece no mobile -->
+            <div class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="hero-nav">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#pag-equipe">Equipe</a></li>
+                    <li><a href="#pag-espaco">Espaço</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#pag-podcast">Podcast</a></li>
+                    <li><a href="#pag-depoimentos">Depoimentos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>ENCONTROS<br>PSICOLOGIA</h1>
+                <p>
+                    Serviço de psicoterapia online em todo o Brasil e presencial em Brasília, destinado a pessoas de
+                    todas as idades. Nosso propósito é democratizar o acesso à psicoterapia com uma visão crítica de
+                    sociedade, reconhecendo que cada pessoa está inserida em realidades como etnia, gênero, classe e
+                    orientação afetivo-sexual.
+                </p>
+                <a href="#contato" class="btn-cta">Conheça Mais</a>
+            </div>
+        </div>
+
+        <div class="hero-graphics-wrapper">
+            <img src="img/banner.svg" alt="" class="abstract-bg">
+            <img src="img/casal-banner.jpg" alt="Casal sorrindo" class="couple-img">
+        </div>
+    </div>
+</section>
+
+<script>
+    const btnMenu = document.querySelector('.menu-hamburguer');
+    const heroNav = document.querySelector('.hero-nav');
+
+    if (btnMenu && heroNav) {
+        btnMenu.addEventListener('click', () => {
+            heroNav.classList.toggle('active');
+            const expanded = btnMenu.getAttribute('aria-expanded') === 'true';
+            btnMenu.setAttribute('aria-expanded', !expanded);
+        });
+
+        heroNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                heroNav.classList.remove('active');
+                btnMenu.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+</script>
+
+
+
 		
-		<!-- Banner -->
-		<header>
-			<img id="img-header" src="img/banner.png" alt="encontros psicologia">
-		</header>
 
-		<!-- Descição da clínica -->
-		<article class="descricao">
-			<div class="descricao-texto">
-				<h1>SOBRE A CLÍNICA</h1>
-				<p>Oferecemos <strong>atendimento online em todo Brasil</strong> e <strong>presencial em São Sebastião - DF</strong>, para todas as faixas etárias.</p>
-				<p>Nossos atendimentos prestados são destinados a pessoas de todas as faixas etárias.</p>
-				<p>Nosso consultório tem o compromisso de <strong>democratizar o acesso à psicoterapia</strong>, compreendendo cada pessoa em sua realidade social, cultural e identitária. Aqui você encontra um espaço de acolhimento e escuta atenta, respeitando questões étnico-raciais, de gênero, classe e orientação afetivo-sexual, dentre outras facetas que estão postas.</p>
-			</div>
-
-			<div class="descricao-imagem">
-				<img src="img/pessoas-inicio.jpg" alt="Imagem relacionada à clínica">
-			</div>
-		</article>
+		
+		
 		
 		<!-- Ícone de topo -->
 		<div id="topo">
@@ -80,34 +108,7 @@
 </a>
 
 
-		<!-- Equipe -->
-		<main id="pag-equipe">
-			<h1>Nossa equipe</h1>
-
-			<div class="container">
-				<div class="card">
-					<div class="imagem">
-						<img class="img-card" src="img/luana.jpg">
-					</div>
-					<div class="text-card">
-						<h3>Luana Pessoa</h3>
-						<p>Sou psicóloga clínica e estou me especializando em Terapia Cognitivo-Comportamental e essa é a abordagem que baseio todo o meu trabalho. Atendo adolescentes e adultos a partir dos 15 anos de idade.</p>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="imagem">
-						<img class="img-card" src="img/wana.png">
-					</div>
-					<div class="text-card">
-						<h3>Wana Lays</h3>
-						<p>Psicóloga clínica e social. Atendo adolescentes e adultos, a partir da perspectiva sistêmica e para além disso, muito do que norteia o meu fazer profissional hoje é acreditar numa ética afetuosa de enxergar as múltiplas formas de existência.</p>
-					</div>
-				</div>
-			</div>	
-		</main>
-
-		<!-- Espaço -->
+		
 <!-- Espaço -->
 <section id="pag-espaco">
     <div class="container-1">
