@@ -1,169 +1,466 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px;
+    scroll-padding-top: 20px;
+}
+
+:root {
+    --cor-hero: #A04F07;
+    --cor-verde: #00AC47;
+    --cor-borda-btn: #C1462F;
+    --cor-bege: #fdf5e6;
+    --font-nav: 'Work Sans', sans-serif;
+    --font-text: 'Inter', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
 }
 
 body {
-    background-color: #FFEFD4;
+    background-color: var(--cor-bege);
+    overflow-x: hidden;
+    font-family: var(--font-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
-/* Menu de navegação */
-nav {
-    background-color: #8D6A5D;
+.hero-section {
+    background-color: var(--cor-hero);
+    color: #ffffff;
+    position: relative;
+    height: 797px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-hero {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding-top: 40px;
+    margin-bottom: 4rem;
     position: relative;
-    width: 100%;
+    z-index: 20;
 }
 
-.container-menu-icones {
+.social-icons {
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    align-items: center;
+
 }
 
-#img-icones {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease-in-out, opacity 0.3s;
-}
-
-#img-icones:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-}
-
-.menu-hamburguer {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 30;
-}
-
-.linha {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    transition: transform 0.3s ease-in-out, opacity 0.3s;
-}
-
-.container-menu-text {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1em;
-    display: flex;
-    gap: 30px;
-    margin-left: auto;
-}
-
-.menu {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out, transform 0.2s;
-}
-
-.menu:hover {
-    color: #FFDD94;
-    transform: translateY(-2px);
-}
-
-.menu:visited {
-    color: #FFFFFF;
-}
-
-.menu:active {
-    color: #FFDD94;
-}
-
-a {
-    text-decoration: none;
-}
-
-@media (max-width: 1024px) {
-    .container-menu-text {
-        margin-left: auto;
+ .social-icons a img {
+        width: 40px;
+        height: 40px;
     }
+
+.social-icons a img:hover {
+    opacity: 1;
+    transform: scale(1.08);
 }
+
+
+
+.hero-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 55px;
+}
+
+.hero-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-nav);
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hero-nav :hover{
+    color: #FFDD94;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+}
+
+.hero-text {
+    margin-left: 0;
+    padding-top: 20px;
+    z-index: 10;
+}
+
+.hero-text h1 {
+    font-family: var(--font-text);
+    font-size: 4.32rem;
+    line-height: 1.22;
+    font-weight: 450;
+    margin-bottom: 6rem;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 0;
+}
+
+.hero-text p {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.19;
+    margin-bottom: 3.5rem;
+    width: 665px;
+    max-width: 100%;
+    opacity: 0.9;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.btn-cta {
+    background-color: var(--cor-verde);
+    color: white;
+    width: 285px;
+    height: 79px;
+    border: 1px solid var(--cor-borda-btn);
+    border-radius: 17px;
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.02);
+}
+
+/* Imagens do Hero */
+.hero-graphics-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.abstract-bg {
+    position: absolute;
+    top: 0;
+    right: -26%;
+    height: 100%;
+    width: auto;
+    transform: rotate(180deg);
+    z-index: 1;
+    opacity: 1;
+}
+
+.couple-img {
+    position: absolute;
+    right: 3.5rem;
+    bottom: -73px;
+    width: 465px;
+    height: auto;
+    border-radius: 17px;
+    z-index: 5;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+    object-fit: cover;
+}
+.descricao {
+    padding: 100px 20px 40px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descricao-texto {
+    margin-right: 20px;
+    max-width: 600px;
+}
+
+.titulo-sessao {
+    text-align: left;
+    border-left: 5px solid #00AC47;
+    padding-left: 20px;
+    font-size: 1.8em;
+    font-family: var(--font-nav);
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.descricao-texto p {
+    color: #000000;
+    text-align: justify;
+    font-family: var(--font-nav);
+    line-height: 1.5em;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.descricao-imagem {
+    position: relative;
+    display: inline-block;
+}
+
+.descricao-imagem img {
+    max-width: 100%;
+    border-radius: 100px;
+    display: block;
+}
+
+.descricao-imagem::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(to right, rgba(253, 245, 230, 1), rgba(253, 245, 230, 0)) no-repeat;
+    pointer-events: none;
+}
+
+
 
 @media (max-width: 768px) {
+
+    /* ===== MENU HAMBÚRGUER / NAV ===== */
+
     .menu-hamburguer {
         display: flex;
+        flex-direction: column;
+        gap: 4px;
+        position: relative;   /* 🔥 remove conflitos do absolute */
+        top: 0;               /* 🔥 deixa na mesma linha dos ícones */
     }
 
-    .container-menu-text {
+    .menu-hamburguer span {
+        width: 22px;
+        height: 2px;
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    .menu-hamburguer {
+        display: flex;
+        
+        position: absolute;
+        right: 20px;
+    }
+
+    
+
+    .hero-nav ul {
+        display: none; /* esconde menu horizontal */
+    }
+
+    .hero-nav {
         position: fixed;
         top: 0;
         right: 0;
-        width: 85%;
+        width: 70%;
+        max-width: 260px;
         height: 100vh;
-        background-color: #8D6A5D;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        text-align: left;
-        z-index: 20;
+        background-color: #502f13;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
-        padding-left: 20px;
-        border-radius: 20px;
+        transition: transform 0.3s ease;
+        z-index: 998;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        pointer-events: none;
     }
 
-    .container-menu-text.active {
+    .hero-nav.active {
         transform: translateX(0);
+        pointer-events: auto;
     }
 
-    .menu {
-        font-size: 1.5em;
-        margin: 20px 0;
-        padding: 10px 20px;
-        width: auto;
-        text-align: left; 
-        border-radius: 10px;
-        transition: background-color 0.3s;
+    .hero-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-left: 24px;
     }
 
-    .menu:hover {
-        background-color: rgba(255, 221, 148, 0.2);
+    /* ===== HERO EM 2 COLUNAS, IGUAL AO MODELO ===== */
+
+    .hero-section {
+        height: auto;
+        padding-bottom: 32px;
+    }
+
+    .container-hero {
+        display: flex;                 /* texto + imagem lado a lado */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;                     /* 🔹 respiro ENTRE texto e imagem */
+        max-width: 100%;
+        padding: 0 16px 24px;
+    }
+
+    /* header fixo lá em cima, sem cortar o título */
+     .hero-header {
+        position: absolute;
+        top: 20px;
+        left: 16px;
+        right: 16px;
+        padding-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   /* ícones + hambúrguer alinhados verticalmente */
+        z-index: 20;
+    }
+
+    /* COLUNA ESQUERDA: TEXTO */
+
+    .hero-content {
+        flex: 0 0 52%;
+        height: auto;
+        margin-top: 115px;             /* 🔹 desce o título para não encostar nos ícones */
+    }
+
+    .hero-text {
+        padding-top: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 1.7rem;
+        line-height: 1.15;
+        margin-bottom: 12px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .hero-text p {
+        font-size: 0.80rem;
+        line-height: 1.32;
+        width: 100%;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .btn-cta {
+        display: none;                 /* sem botão no mobile */
+    }
+
+    /* COLUNA DIREITA: IMAGEM */
+
+    .hero-graphics-wrapper {
+        position: relative !important;
+        flex: 0 0 48%;
+        height: auto;
+        top: auto;
+        right: auto;
+        pointer-events: none;
+        margin-top: 115px;             /* alinha altura com o texto */
+    }
+
+    .abstract-bg {
+        display: none;
+    }
+
+    .couple-img {
+        position: relative !important;
+        width: 100%;
+        max-width: 220px;
+        border-radius: 16px;
+        bottom: auto;
+        right: auto;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+        object-fit: cover;
+        display: block;
     }
 }
 
-/* Banner da página*/
-#img-header{
-	width: 100%;
-	height: 100%;
-    border-radius: 0 0 100px 100px;
-}
 
 h1{
 	font-family: "Work Sans", sans-serif;
     text-align: center; 
-    padding-left: 20px;
     font-size: 1.5em;
     color: #00AC47; 
-    margin-bottom: 20px;
 }
 
 p{
 	color: #000000;
 	text-align: justify;
-	font: 1em "Work Sans", sans-serif;
+	font: 1em "Montserrat", sans-serif;
 	line-height: 1.5em;
 	font-size: 1em;
+    
 }
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 110px;
+    right: 22px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 9999;
+    animation: bounce 2s infinite ease-in-out;
+    transition: transform 0.2s;
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+}
+
+/* efeito ao passar o mouse */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* animação "pulo suave" */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
 
 /* Descrição da clínica*/
 .descricao h1 {
@@ -213,7 +510,7 @@ p{
     pointer-events: none;
 }
 
-/*Responsatividade descrição*/
+/*Responsividade descrição*/
 @media screen and (max-width: 1024px) {
     .descricao {
         margin-left: 50px;
@@ -263,15 +560,32 @@ p{
 
 /* Botão topo*/
 #topo{
-	position: fixed;
-	right: 30px;
-	bottom: 32px;
+    position: fixed;
+    right: 20px;
+    bottom: 32px;   /* base da coluna */
+        z-index: 9999; /* sempre por cima */
+
 }
 
 #bt-topo{
-	width: 60px;
-	height: 60px;
+    width: 60px;
+    height: 60px;
+        pointer-events: auto; /* garante clicável */
+
 }
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 100px;
+        right: 24px;
+    }
+
+    #topo {
+        right: 24px;
+        bottom: 24px;
+    }
+}
+
 
 /*Equipe*/
 main{
@@ -322,8 +636,7 @@ main{
 
 /* Espaço */
 #pag-espaco {
-    text-align: center;
-    padding: 40px;
+        padding: 24px 12px;      /* antes 40px em tudo */
 }
 
 .container-mural {
@@ -358,27 +671,31 @@ main{
 
 
 /* Carrossel para mobile */
+/* ===== CARROSSEL MOBILE ===== */
+
 .carousel {
-    display: none;  /* O carrossel começa escondido */
-    overflow: hidden;
-    max-width: 100%;
+    display: none;                 /* começa escondido (só mostra no @media) */
     position: relative;
-    text-align: center;
-    z-index: 1;  /* Garantir que o carrossel apareça acima de outros elementos */
+    max-width: 340px;              /* largura máxima do carrossel */
+    margin: 0 auto 2rem;           /* centraliza e dá espaço embaixo */
+    overflow: hidden;              /* esconde o que passar da borda */
+    border-radius: 16px;           /* bordas arredondadas na “caixa” toda */
 }
 
+/* trilho interno com todos os slides */
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%; /* Ajustando a largura para 100% da tela */
 }
 
+/* cada imagem é um slide ocupando 100% da largura */
 .carousel img {
+    flex: 0 0 100%;                /* 1 imagem por vez */
     width: 100%;
-    height: 250px;
-    border-radius: 15px;
+    height: 230px;
+    border-radius: 16px;
     object-fit: cover;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
 /* Botões do carrossel */
@@ -386,33 +703,67 @@ main{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
     border: none;
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    z-index: 2; /* Garantir que os botões fiquem sobre as imagens */
+    z-index: 2;
+    transition: background 0.2s ease, transform 0.1s ease;
 }
 
 .carousel-btn.prev {
-    left: 10px;
+    left: 8px;
 }
 
 .carousel-btn.next {
-    right: 10px;
+    right: 8px;
 }
 
-/* Esconder grid no mobile e mostrar carrossel */
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.75);
+    transform: translateY(-50%) scale(1.05);
+}
+
+/* Pontinhos de navegação (se quiser usar) */
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.carousel-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-dot.active {
+    background: #ffffff;
+}
+
+/* ===== MOBILE: esconde grid e mostra carrossel ===== */
+
 @media screen and (max-width: 768px) {
     .grid-imagens {
-        display: none;  /* Esconde a grid de imagens */
+        display: none;     /* Esconde a grid de imagens */
     }
 
     .carousel {
-        display: block;  /* Exibe o carrossel */
-        width: 100%;     /* Garante que o carrossel ocupe toda a largura da tela */
+        display: block;    /* Mostra o carrossel */
+        width: 100%;
     }
 }
+
 
 /*Contato*/
 #contato{
@@ -440,8 +791,8 @@ main{
 #contato p{
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
-    margin-right: 220px;
-    text-align: right;
+    margin-right: 200px;
+        text-shadow: 2px 2px 4px #000;
 
 
 }
@@ -456,6 +807,7 @@ transition: transform 0.3s ease-in-out;
       display: flex;
   /* Outras propriedades, como alinhamento vertical */
   align-items: center; /* Alinha verticalmente ao centro */
+  
 }
 
 #lado-contato{
@@ -467,8 +819,6 @@ transition: transform 0.3s ease-in-out;
     color: #FFF;
     transition: transform 0.3s ease-in-out; /* animação aqui */
     cursor: pointer;
-        text-align: right;
-
 }
 
 #lado-contato:hover{
@@ -487,93 +837,279 @@ transition: transform 0.3s ease-in-out;
     transform: scale(1.05); /* ícone + texto crescem juntos */
 }
 
+@media screen and (max-width: 768px) {
 
+    #contato {
+        padding: 24px 16px;          /* menos padding e com lateral */
+        justify-content: center;     /* não empurra só pra direita */
+        align-items: flex-start;
+        background-position: center;
+    }
 
+    #contato-direita {
+        max-width: 100%;             /* usa a largura toda da tela */
+        text-align: left;            /* texto alinhado à esquerda */
+    }
+
+    #contato p {
+        margin-right: 0;             /* remove aquele 200px que estourava */
+        font-size: 0.95rem;
+        text-shadow: 2px 2px 4px #000;
+    }
+
+    #titulo-contato {
+        text-align: left;
+        font-size: 1.4rem;
+    }
+
+    #lado-contato {
+        justify-content: flex-start; /* ícone + texto começam à esquerda */
+    }
+
+    #icone-contato {
+        margin-left: 0;
+    }
+}
 
 
 /*Podcast*/
 #pag-podcast {
-    margin: 50px auto;
-    padding: 40px;
+    margin: 0;
+    padding: 40px 60px;
+    border-radius: 24px;
+}
+
+/* topo: título + ícone */
+.podcast-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;           /* 🔹 alinha título e ícone na mesma altura */
+    padding-bottom: 12px;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.podcast-topo h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    margin-top: 50px;                     /* 🔹 tira o empurrão pra baixo */
+}
+
+#icone-podcast {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 0;                     /* 🔹 nada de margem desnecessária */
+    display: block;
+}
+
+.podcast-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 40px;
+    margin-top: 20px;
 }
 
-#icone-podcast{
-    width: 100px;
-	height: 100px;
-	padding: 20px;
-    border-radius: 23px;
+.podcast-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+} 
+
+#podcast1 {
+    border-radius: 10px;
 }
 
-
-#logo-podcast img{
-    border-radius: 100px;
-
+.podcast-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 80px;
 }
 
+.podcast-info {
+    align-items: center;
+}
 
-
-
-
-
-/*Podcast*/
-#pag-podcast {
-    margin: 50px auto;
-    padding: 40px;
+.podcast-episodio {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-#img-spot {
-    width: 75px;
-    height: 75px;
-    margin-right: 20px;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-#img-po{
-	text-align: right;
-	margin-right:40px;
-}
-
-#h1-mod2 {
-    font: 1.8em "Work Sans", sans-serif;
-    line-height: 1.6;
-    color: #333; /* Cor do título */
-	margin-top: 28px;
-    text-align: left; 
-}
-
-#texto-pod {
-    font-size: 1em;
-    line-height: 1.6em;
-    color: #333; /* Cor do texto */
-	width: 450px;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    align-items: flex-start;
 }
 
 #img-pod {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-	text-align: right;
+    width: 300px;
+    border-radius: 10px;
 }
 
-#img-pod:hover {
-    transform: scale(1.05);
+.podcast-texto h2 {
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
-iframe {
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(238, 234, 234, 0.644);
+.podcast-texto p {
+    line-height: 1.4;
+    margin-bottom: 18px;
+} 
+
+.btn-podcast {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #00A86B;
+    color: #FFFFFF;
+
 }
+
+.btn-podcast:hover{
+    background-color: #a42a26;
+}
+
+.left-carousel {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #BF6B1F; /* cor das setas */
+    transition: 0.3s;
+}
+
+.arrow-btn:hover {
+    transform: scale(1.2);
+    color: #8A4D18;
+}
+
+#left-img {
+    width: 230px;
+    border-radius: 10px;
+    transition: transform 1000s ease-out;
+}
+
+.slide-out-left {
+    transform: translateX(-120%);
+}
+
+.slide-in-right {
+    transform: translateX(120%);
+}
+
+.slide-in-right-active {
+    transform: translateX(0);
+}
+
+
+
+
+
+/* AJUSTES DO PODCAST PARA MOBILE */
+@media (max-width: 768px) {
+
+    /* Seção mais limpa e sem sobras laterais */
+    #pag-podcast {
+        margin: 0;
+        padding: 24px 16px;
+        border-radius: 0;
+    }
+
+    /* Título principal do podcast */
+    .podcast-topo {
+        justify-content: flex-start;
+    }
+
+    .podcast-topo h1 {
+        margin-top: 24px;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    /* Grid vira 1 coluna */
+    .podcast-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 16px;
+    }
+
+    /* Remove margens da direita/esquerda */
+    .podcast-right,
+    .podcast-left {
+        margin: 0;
+    }
+
+    /* Texto inicial da direita */
+    .podcast-info {
+        text-align: center;
+    }
+
+    /* Episódio reorganizado (imagem em cima e texto embaixo) */
+    .podcast-episodio {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Imagem centralizada */
+    #img-pod {
+        width: 100%;
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    /* Centraliza título do episódio */
+    .podcast-texto h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    /* Centraliza o texto */
+    .podcast-texto p {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* Centraliza botão */
+    .podcast-texto .btn-podcast {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Ajustes do carrossel da coluna esquerda */
+    .left-carousel {
+        gap: 12px;
+    }
+
+    #left-img {
+        width: 220px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*Depoimentos*/
 #pag-depoimentos {
@@ -582,63 +1118,468 @@ iframe {
 
 /*Rodapé*/
 .rodape {
-    padding: 20px;
-    background-color: #8D6A5D;
+    padding: 50px 80px;
+    background-color: #A04F07;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
-/*teste*/
+.rodape-sobre {
+    flex: 1 1 220px;
+    min-width: 200px;
+    color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.rodape-sobre h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rodape-sobre p {
+    font-size: 0.95em;
+    line-height: 1.7em;
+    color: #FFFFFF;
+    text-align: left;
+}
 
 #menu-rodape{
-	margin-left: 15%;
-	line-height: 60px;
+    margin-left: 0;
+    line-height: 2em;
+    flex: 0 1 140px;
+    min-width: 120px;
+}
+
+#menu-rodape h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #menu-rodape a {
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-weight: normal;
     transition: color 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    display: block;
+    padding: 2px 0;
+}
+
+#menu-rodape a:hover {
+    color: #FFDD94;
+}
+
+.rodape-redes {
+    flex: 0 1 140px;
+    min-width: 120px;
+}
+
+.rodape-redes h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
     font-family: 'Work Sans', sans-serif;
-}
-
-.mapa{
-	margin-right: 20%;
-	margin-top: 35px;
-}
-
-#icone-rodape{
-	width: 90px;
-	height: 90px;
-	padding: 20px;
-	margin-left: 60px;
-	margin-right: 90px;
-    transition: transform 0.3s ease-in-out;
-
-}
-
-#icone-rodape:hover {
-    transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .container-icones{
-	margin-top: 60px;
+    margin-top: 0;
     gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.container-icones > div {
+    margin: 0;
 }
 
 .container-icones a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    gap: 10px;
+}
+
+#icone-rodape{
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+#icone-rodape:hover {
+    transform: scale(1.15);
+}
+
+.rodape-contato {
+    flex: 1 1 180px;
+    min-width: 160px;
+}
+
+.rodape-contato h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rodape-contato p {
+    font-size: 0.95em;
+    line-height: 1.9em;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+    padding: 2px 0;
+}
+
+.rodape-contato a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.rodape-contato a:hover {
+    color: #FFDD94;
+}
+
+.rodape-endereco {
+    flex: 1 1 400px;
+    min-width: 280px;
+}
+
+.rodape-endereco h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.endereco-conteudo {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.endereco-texto {
+    flex: 1 1 180px;
+    min-width: 150px;
+}
+
+.endereco-texto p {
+    font-size: 0.95em;
+    line-height: 1.9em;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+}
+
+.mapa{
+    margin: 0;
+    display: block;
+    flex-shrink: 0;
+}
+
+.mapa iframe {
+    width: 320px;
+    height: 220px;
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade Rodapé */
+
+/* Tablets grandes (1200px - 1024px) */
+@media screen and (max-width: 1200px) {
+    .rodape {
+        padding: 45px 60px;
+        gap: 40px;
+    }
+
+    .mapa iframe {
+        width: 280px;
+        height: 200px;
+    }
+}
+
+/* Tablets médios (1024px - 968px) */
+@media screen and (max-width: 1024px) {
+    .rodape {
+        padding: 40px 50px;
+        gap: 35px;
+    }
+
+    .rodape-sobre,
+    #menu-rodape,
+    .rodape-redes {
+        flex: 1 1 calc(33.33% - 24px);
+    }
+
+    .rodape-contato,
+    .rodape-endereco {
+        flex: 1 1 calc(50% - 18px);
+    }
+
+    .mapa iframe {
+        width: 260px;
+        height: 190px;
+    }
+}
+
+/* Tablets pequenos (968px - 768px) */
+@media screen and (max-width: 968px) {
+    .rodape {
+        padding: 35px 40px;
+        gap: 30px;
+    }
+
+    .rodape-sobre {
+        flex: 1 1 100%;
+    }
+
+    #menu-rodape,
+    .rodape-redes,
+    .rodape-contato {
+        flex: 1 1 calc(33.33% - 20px);
+        min-width: 140px;
+    }
+
+    .rodape-endereco {
+        flex: 1 1 100%;
+    }
+
+    .endereco-conteudo {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mapa iframe {
+        width: 300px;
+        height: 210px;
+    }
+}
+
+/* Smartphones grandes (768px - 600px) */
+@media screen and (max-width: 768px) {
+    .rodape {
+        padding: 30px 25px;
+        gap: 30px;
+    }
+
+    .rodape-sobre,
+    #menu-rodape,
+    .rodape-redes,
+    .rodape-contato,
+    .rodape-endereco {
+        flex: 1 1 100%;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    #menu-rodape {
+        line-height: 2em;
+    }
+
+    .container-icones {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .endereco-conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mapa iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+    }
+}
+
+/* Smartphones médios (600px - 480px) */
+@media screen and (max-width: 600px) {
+    .rodape {
+        padding: 25px 20px;
+        gap: 25px;
+    }
+
+    .rodape-sobre h3,
+    #menu-rodape h3,
+    .rodape-redes h3,
+    .rodape-contato h3,
+    .rodape-endereco h3 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .rodape-sobre p,
+    #menu-rodape a,
+    .rodape-contato p,
+    .endereco-texto p {
+        font-size: 0.9em;
+    }
+
+    #menu-rodape {
+        line-height: 1.9em;
+    }
+
+    .mapa iframe {
+        height: 260px;
+    }
+}
+
+/* Smartphones pequenos (480px - 375px) */
+@media screen and (max-width: 480px) {
+    .rodape {
+        padding: 22px 18px;
+        gap: 22px;
+    }
+
+    .rodape-sobre h3,
+    #menu-rodape h3,
+    .rodape-redes h3,
+    .rodape-contato h3,
+    .rodape-endereco h3 {
+        font-size: 1.15em;
+        margin-bottom: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .rodape-sobre p,
+    #menu-rodape a,
+    .rodape-contato p,
+    .endereco-texto p {
+        font-size: 0.88em;
+        line-height: 1.6em;
+    }
+
+    #menu-rodape {
+        line-height: 1.8em;
+    }
+
+    .rodape-contato p {
+        line-height: 1.9em;
+    }
+
+    #icone-rodape {
+        width: 32px;
+        height: 32px;
+    }
+
+    .container-icones {
+        gap: 20px;
+    }
+
+    .mapa iframe {
+        height: 240px;
+    }
+}
+
+/* Smartphones muito pequenos (375px - 320px) */
+@media screen and (max-width: 375px) {
+    .rodape {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .rodape-sobre h3,
+    #menu-rodape h3,
+    .rodape-redes h3,
+    .rodape-contato h3,
+    .rodape-endereco h3 {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+    .rodape-sobre p,
+    #menu-rodape a,
+    .rodape-contato p,
+    .endereco-texto p {
+        font-size: 0.85em;
+        line-height: 1.55em;
+    }
+
+    #menu-rodape {
+        line-height: 1.7em;
+    }
+
+    #icone-rodape {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container-icones {
+        gap: 18px;
+    }
+
+    .mapa iframe {
+        height: 220px;
+    }
+}
+
+/* Telas muito pequenas (< 320px) */
+@media screen and (max-width: 320px) {
+    .rodape {
+        padding: 18px 12px;
+        gap: 18px;
+    }
+
+    .rodape-sobre h3,
+    #menu-rodape h3,
+    .rodape-redes h3,
+    .rodape-contato h3,
+    .rodape-endereco h3 {
+        font-size: 1.05em;
+        margin-bottom: 8px;
+    }
+
+    .rodape-sobre p,
+    #menu-rodape a,
+    .rodape-contato p,
+    .endereco-texto p {
+        font-size: 0.82em;
+        line-height: 1.5em;
+    }
+
+    #menu-rodape {
+        line-height: 1.6em;
+    }
+
+    #icone-rodape {
+        width: 28px;
+        height: 28px;
+    }
+
+    .container-icones {
+        gap: 15px;
+    }
+
+    .mapa iframe {
+        height: 200px;
+        border-width: 2px;
+    }
 }
 
 /*Rodapé*/
@@ -647,4 +1588,106 @@ footer {
     height: 40px;
 }
 
-/*Responsividade mobile*/
+
+@media screen and (max-width: 768px) {
+
+    #pag-espaco {
+        padding: 24px 12px;      /* antes 40px em tudo */
+    }
+
+    #pag-podcast {
+        margin: 0;
+        padding: 24px 12px;      /* em vez de 40px 60px */
+    }
+
+    main {
+        padding: 20px 12px;      /* se quiser reduzir aqui também */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* 🔒 CORRIGIR SCROLL HORIZONTAL NO MOBILE */
+@media (max-width: 768px) {
+
+  /* nunca deixar passar da largura da tela */
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* containers principais ocupam só a largura da viewport */
+  .hero-section,
+  .container-hero,
+  .hero-content,
+  #pag-espaco,
+  #contato,
+  #pag-podcast,
+  #pag-depoimentos,
+  main,
+  .rodape {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* evita estouro por margem muito grande */
+  .descricao {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  #contato p {
+    margin-right: 0;   /* aquele 200px some no mobile */
+  }
+
+  /* garante que imagens não passem da tela */
+  img, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* o fundo abstrato do hero (que tinha right:-26%) some no mobile */
+  .abstract-bg {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* nav mais justinha no mobile */
+    nav {
+        padding: 12px 16px;
+    }
+
+    /* descrição encostando melhor nas bordas */
+    .descricao {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 24px 16px;
+    }
+
+    /* seção da equipe ocupando melhor a tela */
+    main {
+        padding: 24px 12px;
+    }
+
+
+
+
+    .carousel img {
+        border-radius: 0;
+    }
+
+    /* podcast mais colado nas bordas, como o resto */
+    #pag-podcast {
+        margin: 0;
+        padding: 24px 12px;
+    }
+
+}
+}
